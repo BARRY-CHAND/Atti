@@ -21,7 +21,7 @@ function Footer() {
             <div className="footer__brand">
             <div>
               <Link to="/" className="footer__brand-name">
-                ATRI VERSE
+                ATTII VERSE
               </Link>
               <p className="footer__tagline">Our Talent. Our Verse.</p>
               <p className="footer__brand-line">{SITE.brandLine}</p>
@@ -101,7 +101,7 @@ function Footer() {
             © {year} {SITE.fullName}. All Rights Reserved.
           </p>
           <p>
-            Crafted with <span aria-hidden="true" style={{ color: 'var(--gold)' }}>✦</span> in the ATRI VERSE ecosystem.
+            Crafted with <span aria-hidden="true" style={{ color: 'var(--gold)' }}>✦</span> in the ATTII VERSE ecosystem.
           </p>
         </div>
       </div>

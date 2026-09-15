@@ -58,9 +58,9 @@ function Navbar() {
     <>
       <header className={`nav ${scrolled ? 'nav--scrolled' : ''} ${open ? 'nav--scrolled' : ''}`}>
         <div className="container nav__inner">
-          <Link to="/" className="nav__brand" aria-label="ATRI VERSE home">
+          <Link to="/" className="nav__brand" aria-label="ATTII VERSE home">
             <span className="nav__brand-text">
-              <span className="nav__brand-name">ATRI VERSE</span>
+              <span className="nav__brand-name">ATTII VERSE</span>
               <span className="nav__brand-sub">Entertainment &amp; Productions</span>
             </span>
           </Link>

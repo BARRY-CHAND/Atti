@@ -7,7 +7,7 @@ import SectionHeading from '../components/ui/SectionHeading.jsx'
 import CTASection from '../components/ui/CTASection.jsx'
 import Testimonials from '../components/ui/Testimonials.jsx'
 import EventCard from '../components/cards/EventCard.jsx'
-import WhyAtri from '../components/sections/WhyAtri.jsx'
+import WhyAttii from '../components/sections/WhyAttii.jsx'
 import ServicesIndex from '../components/sections/ServicesIndex.jsx'
 import ProductionShowcase from '../components/sections/ProductionShowcase.jsx'
 import TalentSection from '../components/sections/TalentSection.jsx'
@@ -37,7 +37,7 @@ function Hero() {
             preload="metadata"
           />
         ) : (
-          <Img src={IMAGES.hero} alt="ATRI VERSE — Entertainment & Productions" priority />
+          <Img src={IMAGES.hero} alt="ATTII VERSE — Entertainment & Productions" priority />
         )}
       </div>
       <div className="hero__overlay" />
@@ -51,7 +51,7 @@ function Hero() {
         </div>
 
         <div className="hero__title-block hero-line" style={{ animationDelay: '0.25s' }}>
-          <h1 className="hero__title-line hero__title-line--attii">ATRI</h1>
+          <h1 className="hero__title-line hero__title-line--attii">ATTII</h1>
           <h1 className="hero__title-line hero__title-line--verse">VERSE</h1>
         </div>
 
@@ -120,7 +120,7 @@ function BrandIntro() {
           <div style={{ position: 'relative' }}>
             <Img
               src={IMAGES.aboutHome}
-              alt="The ATRI VERSE creative ecosystem"
+              alt="The ATTII VERSE creative ecosystem"
               aspect="4 / 3"
               style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-soft)' }}
             />
@@ -151,7 +151,7 @@ function BrandIntro() {
           </Reveal>
           <Reveal dir="up" delay={320}>
             <Link to="/about" className="text-link mt-lg">
-              Discover ATRI VERSE →
+              Discover ATTII VERSE →
             </Link>
           </Reveal>
         </div>
@@ -337,14 +337,14 @@ function Home() {
   return (
     <>
       <Seo
-        title="ATRI VERSE Entertainment & Productions | Entertainment, Events & Media Production"
-        description="ATRI VERSE Entertainment & Productions brings together entertainment, event management, media production, creative services and talented creators to build memorable experiences."
+        title="ATTII VERSE Entertainment & Productions | Entertainment, Events & Media Production"
+        description="ATTII VERSE Entertainment & Productions brings together entertainment, event management, media production, creative services and talented creators to build memorable experiences."
         path="/"
       />
       <Hero />
       <Introduction />
       <BrandIntro />
-      <WhyAtri />
+      <WhyAttii />
       <ServicesIndex />
       <FeaturedWork />
       <FeaturedEvents />

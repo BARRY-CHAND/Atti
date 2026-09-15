@@ -16,8 +16,8 @@ function Work() {
   return (
     <>
       <Seo
-        title="Our Work | Portfolio — ATRI VERSE"
-        description="A portfolio of entertainment, events, production, creative and media work by ATRI VERSE Entertainment & Productions."
+        title="Our Work | Portfolio — ATTII VERSE"
+        description="A portfolio of entertainment, events, production, creative and media work by ATTII VERSE Entertainment & Productions."
         path="/work"
       />
       <PageHeader

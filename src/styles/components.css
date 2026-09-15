@@ -1,5 +1,5 @@
 /* ============================================================
-   ATRI VERSE — Components (full dark emerald theme)
+   ATTII VERSE — Components (full dark emerald theme)
    ============================================================ */
 
 /* ============================================================
@@ -284,7 +284,6 @@
   position: relative;
   z-index: 2;
   padding-inline: clamp(1.5rem, 6vw, 4rem);
-  padding-top: clamp(8rem, 18vh, 12rem);
   padding-bottom: clamp(3rem, 6vh, 5rem);
   width: 100%;
 }
@@ -321,14 +320,13 @@
 }
 
 .hero__title-line--attii {
-  font-size: clamp(4.2rem, 12vw, 11rem);
-  font-style: normal;
-  letter-spacing: -0.055em;
+  font-size: clamp(4.5rem, 14vw, 13rem);
+  font-style: italic;
 }
 
 .hero__title-line--verse {
-  font-size: clamp(3.3rem, 9.5vw, 9rem);
-  letter-spacing: 0.08em;
+  font-size: clamp(3.5rem, 11vw, 10rem);
+  letter-spacing: 0.12em;
   font-style: normal;
 }
 
@@ -373,42 +371,12 @@
 }
 
 @media (max-width: 640px) {
-  .hero {
-    min-height: 100svh;
-    align-items: flex-end;
-  }
-  .hero__overlay {
-    background:
-      linear-gradient(180deg, rgba(7, 13, 13, 0.12) 0%, rgba(7, 13, 13, 0.3) 34%, rgba(7, 13, 13, 0.78) 62%, rgba(16, 32, 32, 0.98) 100%);
-  }
-  .hero__inner {
-    padding-inline: 1.25rem;
-    padding-top: 9rem;
-    padding-bottom: 2.25rem;
-  }
-  .hero__top {
-    margin-bottom: 1.25rem;
-  }
-  .hero__eyebrow {
-    font-size: 0.58rem;
-    letter-spacing: 0.25em;
-  }
-  .hero__title-block {
-    position: relative;
-    z-index: 3;
-    max-width: 100%;
-  }
   .hero__title-line--attii {
-    font-size: clamp(3.6rem, 18vw, 5.8rem);
-    line-height: 0.92;
+    font-size: clamp(3.5rem, 18vw, 5rem);
   }
   .hero__title-line--verse {
-    font-size: clamp(2.9rem, 14vw, 4.6rem);
-    line-height: 0.96;
-    letter-spacing: 0.055em;
+    font-size: clamp(2.8rem, 14vw, 4rem);
   }
-  .hero__gold-rule { margin: 1.1rem 0; }
-  .hero__tagline { font-size: 0.72rem; letter-spacing: 0.11em; }
   .hero__actions {
     flex-direction: column;
     align-items: flex-start;
@@ -2200,7 +2168,7 @@
 }
 
 /* ============================================================
-   WHY ATRI VERSE — numbered editorial
+   WHY ATTII VERSE — numbered editorial
    ============================================================ */
 
 .why-attii {
@@ -2766,7 +2734,7 @@
 }
 
 /* ============================================================
-   WHAT ATRI VERSE MEANS
+   WHAT ATTII VERSE MEANS
    ============================================================ */
 
 .meaning {
