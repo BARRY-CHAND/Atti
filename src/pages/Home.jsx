@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo.jsx'
 import Reveal from '../components/ui/Reveal.jsx'
@@ -22,8 +23,18 @@ import { LEADERSHIP } from '../data/team.js'
 import { HOME_MILESTONES } from '../data/achievements.js'
 
 function Hero() {
+  const heroSlides = [IMAGES.hero, IMAGES.events.srmPongal2026, IMAGES.events.culturalStage, IMAGES.gallery[0], IMAGES.gallery[1]]
+  const [activeSlide, setActiveSlide] = useState(0)
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % heroSlides.length)
+    }, 4000)
+    return () => window.clearInterval(timer)
+  }, [heroSlides.length])
+
   return (
-    <section className={`hero ${IMAGES.heroVideo ? '' : 'hero--no-media'}`}>
+    <section className={`hero hero--slideshow ${IMAGES.heroVideo ? '' : 'hero--no-media'}`}>
       <div className="hero__media">
         {IMAGES.heroVideo ? (
           <video
@@ -37,7 +48,13 @@ function Hero() {
             preload="metadata"
           />
         ) : (
-          <Img src={IMAGES.hero} alt="ATTII VERSE — Entertainment & Productions" priority />
+          <Img
+            key={heroSlides[activeSlide]}
+            className="hero__slide"
+            src={heroSlides[activeSlide]}
+            alt="ATTI VERSE live entertainment and production"
+            priority={activeSlide === 0}
+          />
         )}
       </div>
       <div className="hero__overlay" />
@@ -47,6 +64,9 @@ function Hero() {
         <div className="hero__top">
           <p className="hero__eyebrow hero-line" style={{ animationDelay: '0.1s' }}>
             Entertainment &amp; Productions
+          </p>
+          <p className="hero__brand-kicker hero-line" style={{ animationDelay: '0.16s' }}>
+            ATTI VERSE
           </p>
         </div>
 
@@ -79,6 +99,11 @@ function Hero() {
           <span>Production</span>
           <span className="hero__meta-sep">/</span>
           <span>Creative</span>
+        </div>
+        <div className="hero__slides" aria-label="Hero image slideshow">
+          {heroSlides.map((_, index) => (
+            <span key={index} className={index === activeSlide ? 'is-active' : ''} />
+          ))}
         </div>
       </div>
     </section>
