@@ -3422,3 +3422,30 @@
   .hero.hero--slideshow .hero__grain { height: 58vw; }
   .hero.hero--slideshow .hero__meta { gap: .35rem; }
 }
+
+/* Final mobile hero order: rectangle image -> ATTI VERSE -> description -> actions -> tags */
+@media (max-width: 640px) {
+  .hero.hero--slideshow .hero__brand-lockup {
+    margin-bottom: 1.15rem;
+  }
+  .hero.hero--slideshow .hero__brand-lockup p {
+    font-size: clamp(2.05rem, 10vw, 3.15rem);
+    letter-spacing: .12em;
+    text-indent: .12em;
+  }
+  .hero.hero--slideshow .hero__title-block,
+  .hero.hero--slideshow .hero__gold-rule {
+    display: none;
+  }
+  .hero.hero--slideshow .hero__tagline {
+    order: 3;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: .72rem;
+    line-height: 1.6;
+    letter-spacing: .08em;
+  }
+  .hero.hero--slideshow .hero__actions { order: 4; }
+  .hero.hero--slideshow .hero__meta { order: 5; }
+  .hero.hero--slideshow .hero__slides { order: 6; }
+}
