@@ -3449,3 +3449,92 @@
   .hero.hero--slideshow .hero__meta { order: 5; }
   .hero.hero--slideshow .hero__slides { order: 6; }
 }
+
+/* Desktop hero composition: rectangular image first, then brand and actions */
+@media (min-width: 641px) {
+  .hero.hero--slideshow {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--emerald-black);
+  }
+  .hero.hero--slideshow .hero__media {
+    position: relative;
+    inset: auto;
+    order: 1;
+    width: 100%;
+    height: clamp(390px, 52vw, 680px);
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+  .hero.hero--slideshow .hero__media .hero__slide,
+  .hero.hero--slideshow .hero__media .hero__slide .img__el {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero.hero--slideshow .hero__media .hero__slide .img__el {
+    border-radius: 0 0 18px 18px;
+  }
+  .hero.hero--slideshow .hero__overlay {
+    top: 0;
+    bottom: auto;
+    height: clamp(390px, 52vw, 680px);
+    background: linear-gradient(180deg, rgba(7,13,13,.08), rgba(16,32,32,.56));
+    pointer-events: none;
+  }
+  .hero.hero--slideshow .hero__grain {
+    height: clamp(390px, 52vw, 680px);
+    bottom: auto;
+  }
+  .hero.hero--slideshow .hero__inner {
+    order: 2;
+    width: 100%;
+    padding: clamp(2.5rem, 5vw, 5rem) 2rem clamp(3rem, 5vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero.hero--slideshow .hero__top { display: none; }
+  .hero.hero--slideshow .hero__brand-lockup {
+    order: 1;
+    width: 100%;
+    margin: 0 auto 1.5rem;
+  }
+  .hero.hero--slideshow .hero__brand-lockup p {
+    color: var(--gold-soft);
+    font-size: clamp(3.2rem, 7vw, 7.5rem);
+    letter-spacing: .12em;
+    text-indent: .12em;
+    line-height: .95;
+  }
+  .hero.hero--slideshow .hero__brand-rule { width: clamp(70px, 12vw, 180px); }
+  .hero.hero--slideshow .hero__title-block,
+  .hero.hero--slideshow .hero__gold-rule { display: none; }
+  .hero.hero--slideshow .hero__tagline {
+    order: 2;
+    max-width: 720px;
+    color: rgba(255,255,255,.72);
+    font-size: clamp(.9rem, 1.4vw, 1.15rem);
+    letter-spacing: .15em;
+  }
+  .hero.hero--slideshow .hero__actions {
+    order: 3;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .hero.hero--slideshow .hero__meta {
+    order: 4;
+    margin-top: 1.8rem;
+    justify-content: center;
+  }
+  .hero.hero--slideshow .hero__slides {
+    order: 5;
+    justify-content: center;
+    margin-top: 1.4rem;
+  }
+}
