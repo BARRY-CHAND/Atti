@@ -20,7 +20,7 @@ function ServiceDetail() {
   return (
     <>
       <Seo
-        title={`${service.title} | ATTII VERSE`}
+        title={`${service.title} | ATRI VERSE`}
         description={service.description}
         path={`/services/${slug}`}
       />
@@ -36,7 +36,7 @@ function ServiceDetail() {
         <div className="container feature">
           <Reveal dir="right" delay={100}>
             <div className="feature__media">
-              <Img src={service.image} alt={`${service.title} — ATTII VERSE`} priority />
+              <Img src={service.image} alt={`${service.title} — ATRI VERSE`} priority />
             </div>
           </Reveal>
           <div>

@@ -20,7 +20,7 @@ function EventDetail() {
   return (
     <>
       <Seo
-        title={`${event.title} | ATTII VERSE`}
+        title={`${event.title} | ATRI VERSE`}
         description={event.description}
         path={`/events/${slug}`}
       />
@@ -53,7 +53,7 @@ function EventDetail() {
             </Reveal>
             <Reveal dir="up" delay={120}>
               <p style={{ color: 'var(--text-muted)', marginTop: '1rem' }}>
-                “ATTII VERSE participated in {event.title} as part of its growing entertainment and
+                “ATRI VERSE participated in {event.title} as part of its growing entertainment and
                 cultural-performance journey.”
               </p>
             </Reveal>

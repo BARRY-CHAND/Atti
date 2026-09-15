@@ -28,8 +28,8 @@ function Gallery() {
   return (
     <>
       <Seo
-        title="Gallery | Our Moments — ATTII VERSE"
-        description="A visual gallery of events, performances, production, behind-the-scenes and creative moments from the ATTII VERSE ecosystem."
+        title="Gallery | Our Moments — ATRI VERSE"
+        description="A visual gallery of events, performances, production, behind-the-scenes and creative moments from the ATRI VERSE ecosystem."
         path="/gallery"
       />
       <PageHeader

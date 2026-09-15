@@ -15,7 +15,7 @@ function ServiceFeature({ service, index }) {
         <div className={`feature ${reverse ? 'feature--reverse' : ''}`}>
           <Reveal dir={reverse ? 'left' : 'right'} delay={120}>
             <div className="feature__media">
-              <Img src={service.image} alt={`${service.title} — ATTII VERSE`} priority={index < 2} />
+              <Img src={service.image} alt={`${service.title} — ATRI VERSE`} priority={index < 2} />
             </div>
           </Reveal>
           <div>
@@ -67,8 +67,8 @@ function Services() {
   return (
     <>
       <Seo
-        title="Services | Entertainment, Events, Media & Creative — ATTII VERSE"
-        description="ATTII VERSE services: entertainment, event management, media production, film & creative production, design and talent collaboration."
+        title="Services | Entertainment, Events, Media & Creative — ATRI VERSE"
+        description="ATRI VERSE services: entertainment, event management, media production, film & creative production, design and talent collaboration."
         path="/services"
       />
       <PageHeader

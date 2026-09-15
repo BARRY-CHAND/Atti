@@ -1,5 +1,5 @@
 // ============================================================
-// ATTII VERSE — Central Site Configuration
+// ATRI VERSE — Central Site Configuration
 // ============================================================
 // Everything in this file is safe to update without touching
 // components. Replace the placeholder values below with real
@@ -7,8 +7,8 @@
 // ============================================================
 
 export const SITE = {
-  name: 'ATTII VERSE',
-  fullName: 'ATTII VERSE Entertainment & Productions',
+  name: 'ATRI VERSE',
+  fullName: 'ATRI VERSE Entertainment & Productions',
   tagline: 'Our Talent. Our Verse.',
   descriptor: 'Entertainment. Production. Experiences.',
   brandLine: 'Entertainment • Production • Events • Creative',
@@ -18,7 +18,7 @@ export const SITE = {
   email: '', // e.g. 'hello@attiverse.in'
   phone: '', // e.g. '+91 90000 00000'
   address: '', // e.g. 'Chennai, Tamil Nadu, India'
-  url: 'https://mohan-10-15.github.io/atti-verse/',
+  url: 'https://avinashk08408.github.io/Atriverse-/',
 }
 
 // True only once real contact details are filled in above.
