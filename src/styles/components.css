@@ -3281,3 +3281,20 @@
   font-size: 0.82rem;
   color: var(--text-faint);
 }
+
+/* Centered ATTI VERSE hero opening */
+.hero__top { text-align: center; }
+.hero__brand-lockup { display:flex; align-items:center; justify-content:center; gap:clamp(.8rem,2vw,1.5rem); margin:0 auto clamp(1.5rem,3vh,2.4rem); width:min(100%,760px); }
+.hero__brand-lockup p { color:var(--white); font-family:var(--font-display); font-size:clamp(1rem,2vw,1.45rem); font-weight:700; letter-spacing:.32em; line-height:1; text-indent:.32em; white-space:nowrap; }
+.hero__brand-rule { width:clamp(36px,10vw,130px); height:1px; background:linear-gradient(90deg,transparent,var(--gold)); opacity:.75; }
+.hero__brand-rule:last-child { transform:rotate(180deg); }
+.hero__title-line--attii,.hero__title-line--verse { text-align:center; }
+.hero__tagline { text-align:center; }
+.hero__actions { justify-content:center; }
+.hero__meta { justify-content:center; }
+@media(max-width:640px) {
+  .hero__brand-lockup { gap:.65rem; margin-bottom:1.35rem; }
+  .hero__brand-lockup p { font-size:.85rem; letter-spacing:.24em; text-indent:.24em; }
+  .hero__brand-rule { width:28px; }
+  .hero__meta { justify-content:flex-start; }
+}

@@ -65,14 +65,17 @@ function Hero() {
           <p className="hero__eyebrow hero-line" style={{ animationDelay: '0.1s' }}>
             Entertainment &amp; Productions
           </p>
-          <p className="hero__brand-kicker hero-line" style={{ animationDelay: '0.16s' }}>
-            ATTI VERSE
-          </p>
         </div>
 
-        <div className="hero__title-block hero-line" style={{ animationDelay: '0.25s' }}>
-          <h1 className="hero__title-line hero__title-line--attii">ATTI</h1>
-          <h1 className="hero__title-line hero__title-line--verse">VERSE</h1>
+        <div className="hero__brand-lockup hero-line" style={{ animationDelay: '0.2s' }}>
+          <span className="hero__brand-rule" />
+          <p>ATTI VERSE</p>
+          <span className="hero__brand-rule" />
+        </div>
+
+        <div className="hero__title-block hero-line" style={{ animationDelay: '0.32s' }}>
+          <h1 className="hero__title-line hero__title-line--attii">CREATE</h1>
+          <h1 className="hero__title-line hero__title-line--verse">THE MOMENT</h1>
         </div>
 
         <div className="hero__gold-rule hero-line" style={{ animationDelay: '0.4s' }} />
