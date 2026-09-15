@@ -76,15 +76,15 @@ function Events() {
   return (
     <>
       <Seo
-        title="Events & Experiences | ATTII VERSE"
-        description="From cultural celebrations and performances to event coordination and execution, ATTII VERSE creates and contributes to experiences that bring people together."
+        title="Events & Experiences | ATTI VERSE"
+        description="From cultural celebrations and performances to event coordination and execution, ATTI VERSE creates and contributes to experiences that bring people together."
         path="/events"
       />
       <PageHeader
         eyebrow="Events"
         crumb="Events"
         title="EVENTS & EXPERIENCES"
-        subtitle="From cultural celebrations and performances to event coordination and execution, ATTII VERSE creates and contributes to experiences that bring people together."
+        subtitle="From cultural celebrations and performances to event coordination and execution, ATTI VERSE creates and contributes to experiences that bring people together."
       />
 
       {FEATURED_EVENTS.map((event) => (

@@ -97,14 +97,14 @@ function Team() {
   return (
     <>
       <Seo
-        title="Team | The People Behind ATTII VERSE"
-        description="The leadership and creative collective behind ATTII VERSE Entertainment & Productions — founders, performers, creators, designers, production and events teams."
+        title="Team | The People Behind ATTI VERSE"
+        description="The leadership and creative collective behind ATTI VERSE Entertainment & Productions — founders, performers, creators, designers, production and events teams."
         path="/team"
       />
       <PageHeader
         eyebrow="Team"
         crumb="Team"
-        title="THE PEOPLE BEHIND ATTII VERSE"
+        title="THE PEOPLE BEHIND ATTI VERSE"
         subtitle="Every performance, production and event is powered by people who bring their own talent, creativity and commitment."
       />
       <Leadership />

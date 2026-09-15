@@ -91,8 +91,8 @@ function Contact() {
   return (
     <>
       <Seo
-        title="Contact | Let's Work Together — ATTII VERSE"
-        description="Have an event, production, creative project or collaboration in mind? Contact ATTII VERSE Entertainment & Productions."
+        title="Contact | Let's Work Together — ATTI VERSE"
+        description="Have an event, production, creative project or collaboration in mind? Contact ATTI VERSE Entertainment & Productions."
         path="/contact"
       />
       <PageHeader
@@ -247,7 +247,7 @@ function Contact() {
         title="READY WHEN YOU ARE."
         copy={
           <>
-            No matter where your idea starts, ATTII VERSE can help take it to the stage, the screen —
+            No matter where your idea starts, ATTI VERSE can help take it to the stage, the screen —
             or both.
           </>
         }

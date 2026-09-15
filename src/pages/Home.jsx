@@ -71,7 +71,7 @@ function Hero() {
         </div>
 
         <div className="hero__title-block hero-line" style={{ animationDelay: '0.25s' }}>
-          <h1 className="hero__title-line hero__title-line--attii">ATTII</h1>
+          <h1 className="hero__title-line hero__title-line--attii">ATTI</h1>
           <h1 className="hero__title-line hero__title-line--verse">VERSE</h1>
         </div>
 
@@ -145,7 +145,7 @@ function BrandIntro() {
           <div style={{ position: 'relative' }}>
             <Img
               src={IMAGES.aboutHome}
-              alt="The ATTII VERSE creative ecosystem"
+              alt="The ATTI VERSE creative ecosystem"
               aspect="4 / 3"
               style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-soft)' }}
             />
@@ -176,7 +176,7 @@ function BrandIntro() {
           </Reveal>
           <Reveal dir="up" delay={320}>
             <Link to="/about" className="text-link mt-lg">
-              Discover ATTII VERSE →
+              Discover ATTI VERSE →
             </Link>
           </Reveal>
         </div>
@@ -362,8 +362,8 @@ function Home() {
   return (
     <>
       <Seo
-        title="ATTII VERSE Entertainment & Productions | Entertainment, Events & Media Production"
-        description="ATTII VERSE Entertainment & Productions brings together entertainment, event management, media production, creative services and talented creators to build memorable experiences."
+        title="ATTI VERSE Entertainment & Productions | Entertainment, Events & Media Production"
+        description="ATTI VERSE Entertainment & Productions brings together entertainment, event management, media production, creative services and talented creators to build memorable experiences."
         path="/"
       />
       <Hero />

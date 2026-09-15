@@ -37,8 +37,8 @@ function Upcoming() {
   return (
     <>
       <Seo
-        title="Upcoming | What's Next — ATTII VERSE"
-        description="Upcoming events, productions, collaborations and opportunities from ATTII VERSE Entertainment & Productions."
+        title="Upcoming | What's Next — ATTI VERSE"
+        description="Upcoming events, productions, collaborations and opportunities from ATTI VERSE Entertainment & Productions."
         path="/upcoming"
       />
       <PageHeader

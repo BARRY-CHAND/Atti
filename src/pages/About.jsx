@@ -18,7 +18,7 @@ import { MISSION_ITEMS, VALUES } from '../data/organization.js'
 const TIMELINE = [
   {
     title: 'The Beginning',
-    desc: 'ATTII VERSE began as a college-based creative initiative built around talent and entertainment.',
+    desc: 'ATTI VERSE began as a college-based creative initiative built around talent and entertainment.',
   },
   {
     title: 'Building the Team',
@@ -38,7 +38,7 @@ const TIMELINE = [
   },
   {
     title: 'Growth',
-    desc: 'ATTII VERSE continues to build its portfolio, network, collaborations and digital presence.',
+    desc: 'ATTI VERSE continues to build its portfolio, network, collaborations and digital presence.',
   },
 ]
 
@@ -50,7 +50,7 @@ function WhoWeAre() {
           <SectionHeading eyebrow="Who We Are" title={<>A MULTI-DISCIPLINARY <span className="text-gold">CREATIVE ORGANIZATION</span></>} />
           <Reveal dir="up" delay={100}>
             <p style={{ color: 'var(--text-muted)' }}>
-              {`ATTII VERSE Entertainment & Productions is a multi-disciplinary creative organization working
+              {`ATTI VERSE Entertainment & Productions is a multi-disciplinary creative organization working
               across entertainment, media production, event management and creative services.`}
             </p>
           </Reveal>
@@ -70,7 +70,7 @@ function WhoWeAre() {
         <Reveal dir="right" delay={150}>
           <Img
             src={IMAGES.aboutHome}
-            alt="The people and creative work of ATTII VERSE"
+            alt="The people and creative work of ATTI VERSE"
             aspect="4 / 3"
             style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-soft)' }}
           />
@@ -113,7 +113,7 @@ function Vision() {
         </div>
         <Reveal dir="left" delay={120}>
           <p style={{ color: 'rgba(255,255,255,0.82)', fontSize: '1.05rem' }}>
-            ATTII VERSE aims to become a recognized entertainment and production platform that
+            ATTI VERSE aims to become a recognized entertainment and production platform that
             nurtures talent, creates opportunities, expands cultural expression and builds
             professional influence.
           </p>
@@ -136,7 +136,7 @@ function Mission() {
           center
           eyebrow="Mission"
           title="WHAT WE ARE BUILT TO DO"
-          subtitle="Eight commitments that guide how ATTII VERSE organizes, creates and grows."
+          subtitle="Eight commitments that guide how ATTI VERSE organizes, creates and grows."
         />
         <div className="mission-num" style={{ marginTop: '2.5rem' }}>
           {MISSION_ITEMS.map((text, i) => (
@@ -199,7 +199,7 @@ function Leadership() {
           center
           eyebrow="Leadership"
           title="THE PEOPLE BEHIND THE VISION"
-          subtitle="The founders who set the direction, the standards and the culture of ATTII VERSE."
+          subtitle="The founders who set the direction, the standards and the culture of ATTI VERSE."
         />
         <div className="grid-4" style={{ marginTop: '2.5rem' }}>
           {LEADERSHIP.map((member, i) => (
@@ -215,14 +215,14 @@ function About() {
   return (
     <>
       <Seo
-        title="About ATTII VERSE | Talent, Creativity & Opportunity"
-        description="ATTII VERSE Entertainment & Productions is a multi-disciplinary creative organization working across entertainment, media production, event management and creative services."
+        title="About ATTI VERSE | Talent, Creativity & Opportunity"
+        description="ATTI VERSE Entertainment & Productions is a multi-disciplinary creative organization working across entertainment, media production, event management and creative services."
         path="/about"
       />
       <PageHeader
         eyebrow="About Us"
         crumb="About"
-        title="ABOUT ATTII VERSE"
+        title="ABOUT ATTI VERSE"
         subtitle="A universe built around talent, creativity and opportunity."
       />
       <WhoWeAre />

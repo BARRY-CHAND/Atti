@@ -13,7 +13,7 @@ export const EVENTS = [
     date: null, // To be added
     location: null, // To be added
     description:
-      'ATTII VERSE participated in cultural celebrations through entertainment and performance activities.',
+      'ATTI VERSE participated in cultural celebrations through entertainment and performance activities.',
     image: IMAGES.events.srmPongal2026,
     gallery: [],
     certificate: null,
@@ -41,7 +41,7 @@ export const EVENTS = [
     status: 'to-be-added',
     date: null,
     location: null,
-    description: 'Flash mob performances by the ATTII VERSE performance team. Details to be added.',
+    description: 'Flash mob performances by the ATTI VERSE performance team. Details to be added.',
     image: IMAGES.events.flashMob,
     gallery: [],
     certificate: null,

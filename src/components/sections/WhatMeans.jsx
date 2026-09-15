@@ -2,7 +2,7 @@ import Reveal from './../ui/Reveal.jsx'
 import SectionHeading from './../ui/SectionHeading.jsx'
 import { NAME_MEANING } from '../../data/organization.js'
 
-// "What ATTII VERSE Means" — elegant storytelling about the name.
+// "What ATTI VERSE Means" — elegant storytelling about the name.
 function WhatMeans() {
   return (
     <section className="section section--light-green">
@@ -10,7 +10,7 @@ function WhatMeans() {
         <SectionHeading
           center
           eyebrow="The Name"
-          title="WHAT ATTII VERSE MEANS"
+          title="WHAT ATTI VERSE MEANS"
           subtitle="A name built from the values the organization lives by."
         />
 
@@ -18,7 +18,7 @@ function WhatMeans() {
           <Reveal dir="up">
             <div className="meaning__panel">
               <div className="meaning__panel-head">
-                <span className="meaning__word">ATTII</span>
+                <span className="meaning__word">ATTI</span>
                 <span className="meaning__note">The character we create with.</span>
               </div>
               <ul className="meaning__list">
