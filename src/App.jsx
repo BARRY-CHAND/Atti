@@ -3,6 +3,7 @@ import { ArrowUpRight, Menu, X, Camera, Mail, Play, Plus } from 'lucide-react'
 import { services, projects, events, team } from './data/content'
 
 const nav = ['About', 'Services', 'Work', 'Events', 'Team']
+const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`
 
 function Eyebrow({ children }) { return <div className="eyebrow"><span>✦</span>{children}</div> }
 function Button({ children, href = '#contact', outline = false }) { return <a className={`button ${outline ? 'button-outline' : ''}`} href={href}>{children}<ArrowUpRight size={16} /></a> }
@@ -30,7 +31,7 @@ export default function App() {
           <p className="hero-intro">ATRI VERSE is a creative entertainment organisation bringing talent, media, events and ideas together under one growing platform.</p>
           <div className="hero-actions"><Button href="#work">Explore our work</Button><a className="text-link" href="#about">Discover Atriverse <ArrowUpRight size={15} /></a></div>
         </div>
-        <div className="hero-visual"><img src="/assets/crowd-lights.jpg" alt="Crowd under warm concert lights" /><div className="hero-stamp"><span>AV</span><small>Creative<br />ecosystem</small></div><div className="hero-caption"><span>01 / 04</span><span>Live experiences<br />with a point of view</span></div></div>
+        <div className="hero-visual"><img src={asset('crowd-lights.jpg')} alt="Crowd under warm concert lights" /><div className="hero-stamp"><span>AV</span><small>Creative<br />ecosystem</small></div><div className="hero-caption"><span>01 / 04</span><span>Live experiences<br />with a point of view</span></div></div>
         <div className="hero-bottom"><span>Scroll to explore</span><span className="line" /><span>Chennai · Tamil Nadu</span></div>
       </section>
 
@@ -46,7 +47,7 @@ export default function App() {
 
       <section className="network section-pad"><div className="network-top"><SectionTitle eyebrow="05 / The network" title="Everything starts with people." light /><p>From dancers and hosts to editors, photographers and writers — the verse is built by the people inside it.</p></div><div className="marquee"><div>Performers <i>✦</i> Creators <i>✦</i> Dancers <i>✦</i> Designers <i>✦</i> Editors <i>✦</i> Photographers <i>✦</i> </div></div><div className="network-bottom"><span>Join the creative network</span><a href="#contact"><Plus size={20} /> Introduce yourself</a></div></section>
 
-      <section className="gallery section-pad"><div className="work-head"><SectionTitle eyebrow="06 / Visual stories" title="A glimpse inside the verse." /><a className="text-link" href="#contact">Bring us into the frame <ArrowUpRight size={15} /></a></div><div className="gallery-grid"><img className="gallery-tall" src="/assets/live-performance.jpg" alt="Live performance on stage" /><img src="/assets/behind-scenes.jpg" alt="Creative production behind the scenes" /><img src="/assets/stage-production.jpg" alt="Stage production lights" /><img className="gallery-wide" src="/assets/production-studio.jpg" alt="Production studio team" /></div></section>
+      <section className="gallery section-pad"><div className="work-head"><SectionTitle eyebrow="06 / Visual stories" title="A glimpse inside the verse." /><a className="text-link" href="#contact">Bring us into the frame <ArrowUpRight size={15} /></a></div><div className="gallery-grid"><img className="gallery-tall" src={asset('live-performance.jpg')} alt="Live performance on stage" /><img src={asset('behind-scenes.jpg')} alt="Creative production behind the scenes" /><img src={asset('stage-production.jpg')} alt="Stage production lights" /><img className="gallery-wide" src={asset('production-studio.jpg')} alt="Production studio team" /></div></section>
 
       <section className="journey section-pad"><SectionTitle eyebrow="07 / Our journey" title="Still writing the story." copy="A growing organisation, built one considered step at a time." /><div className="timeline"><div><span>01 / Beginning</span><strong>Creative initiative</strong><p>Where a shared love for entertainment, performance and making things began.</p></div><div><span>02 / Now</span><strong>Building the ecosystem</strong><p>Expanding our divisions, production capabilities and creative network.</p></div><div><span>03 / Next</span><strong>More room to create</strong><p>New collaborations, bigger experiences and stories still waiting to be made.</p></div></div></section>
 

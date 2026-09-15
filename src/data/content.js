@@ -5,16 +5,18 @@ export const services = [
   { number: '04', title: 'Creative & Branding', text: 'Campaigns, identity and visual systems that make a brand impossible to miss.' },
 ]
 
+const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`
+
 export const projects = [
-  { number: '01', title: 'Cultural Stage Experience', category: 'Entertainment / Live', year: '2026', image: '/assets/crowd-lights.jpg' },
-  { number: '02', title: 'The Production Room', category: 'Media / Behind the scenes', year: '2026', image: '/assets/production-studio.jpg' },
-  { number: '03', title: 'Visual Production', category: 'Film / Content', year: '2026', image: '/assets/stage-production.jpg' },
+  { number: '01', title: 'Cultural Stage Experience', category: 'Entertainment / Live', year: '2026', image: asset('crowd-lights.jpg') },
+  { number: '02', title: 'The Production Room', category: 'Media / Behind the scenes', year: '2026', image: asset('production-studio.jpg') },
+  { number: '03', title: 'Visual Production', category: 'Film / Content', year: '2026', image: asset('stage-production.jpg') },
 ]
 
 export const events = [
-  { name: 'SRM Pongal Vizha', type: 'Cultural / Entertainment', location: 'Chennai', date: '2026', image: '/assets/live-performance.jpg' },
-  { name: 'Dance Competition', type: 'Performance / Competition', location: 'Tamil Nadu', date: 'Coming soon', image: '/assets/crowd-lights.jpg' },
-  { name: 'Flash Mob Performance', type: 'Performance / Entertainment', location: 'Tamil Nadu', date: 'Coming soon', image: '/assets/behind-scenes.jpg' },
+  { name: 'SRM Pongal Vizha', type: 'Cultural / Entertainment', location: 'Chennai', date: '2026', image: asset('live-performance.jpg') },
+  { name: 'Dance Competition', type: 'Performance / Competition', location: 'Tamil Nadu', date: 'Coming soon', image: asset('crowd-lights.jpg') },
+  { name: 'Flash Mob Performance', type: 'Performance / Entertainment', location: 'Tamil Nadu', date: 'Coming soon', image: asset('behind-scenes.jpg') },
 ]
 
 export const team = [
