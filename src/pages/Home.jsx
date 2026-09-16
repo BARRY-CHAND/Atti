@@ -127,7 +127,8 @@ function Introduction() {
           <Reveal dir="up" delay={100}>
             <h2 className="manifesto__title">
               WE CREATE <span className="text-gold">EXPERIENCES.</span><br />
-              WE BUILD <span className="text-gold">TALENT.</span><br />
+              WE BUILD<br />
+              <span className="text-gold">TALENT.</span><br />
               WE PRODUCE <span className="text-gold">STORIES.</span>
             </h2>
           </Reveal>
