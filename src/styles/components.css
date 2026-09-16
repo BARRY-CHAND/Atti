@@ -3579,3 +3579,22 @@
   .intro-statement .is-reveal + .is-reveal .intro-statement__line--gold { margin-top: -.12em; }
   .intro-statement__line { line-height: .96; }
 }
+
+/* Industrial brand manifesto */
+.manifesto { position:relative; overflow:hidden; padding-block:clamp(5rem,10vw,9rem); background:linear-gradient(135deg,var(--emerald-deep),var(--emerald-bg)); }
+.manifesto::before { content:''; position:absolute; inset:0; opacity:.16; pointer-events:none; background-image:linear-gradient(rgba(223,195,131,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(223,195,131,.12) 1px,transparent 1px); background-size:56px 56px; mask-image:linear-gradient(90deg,black,transparent 85%); }
+.manifesto__grid { position:relative; z-index:1; display:grid; grid-template-columns:160px 1fr; gap:clamp(2rem,7vw,8rem); }
+.manifesto__sidebar { border-right:1px solid var(--gold-line); padding-top:.45rem; }
+.manifesto__tag { margin-top:4rem; color:var(--gold-soft); font-size:.62rem; letter-spacing:.25em; writing-mode:vertical-rl; transform:rotate(180deg); }
+.manifesto__title { max-width:1000px; font-family:var(--font-display); font-size:clamp(2.8rem,7vw,7rem); font-weight:600; line-height:.98; letter-spacing:-.025em; }
+.manifesto__footer { display:grid; grid-template-columns:minmax(220px,360px) 1fr; gap:2rem; align-items:center; margin-top:clamp(2.5rem,5vw,4.5rem); }
+.manifesto__footer p { color:var(--text-muted); font-size:.9rem; line-height:1.7; }
+.manifesto__line { height:1px; background:linear-gradient(90deg,var(--gold),transparent); }
+@media(max-width:640px) {
+  .manifesto { padding-block:4.5rem; }
+  .manifesto__grid { grid-template-columns:1fr; gap:1.8rem; }
+  .manifesto__sidebar { display:flex; justify-content:space-between; align-items:center; border-right:0; border-bottom:1px solid var(--gold-line); padding-bottom:1rem; }
+  .manifesto__tag { margin:0; writing-mode:horizontal-tb; transform:none; }
+  .manifesto__title { font-size:clamp(2.15rem,10vw,3.8rem); line-height:1.02; }
+  .manifesto__footer { grid-template-columns:1fr; gap:1.2rem; margin-top:2.2rem; }
+}
