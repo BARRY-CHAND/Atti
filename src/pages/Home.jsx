@@ -115,29 +115,16 @@ function Hero() {
 
 function Introduction() {
   return (
-    <section className="section manifesto">
-      <div className="container manifesto__grid">
-        <div className="manifesto__sidebar">
-          <Reveal dir="up">
-            <span className="eyebrow">Our Mission</span>
-            <div className="manifesto__tag">EST. 2026</div>
-          </Reveal>
+    <section className="mission-strip">
+      <div className="container">
+        <div className="mission-strip__head">
+          <Reveal dir="up"><span className="eyebrow">Our Mission</span></Reveal>
+          <Reveal dir="up" delay={80}><p>One platform. Three commitments. A clear standard for the work we create.</p></Reveal>
         </div>
-        <div className="manifesto__content">
-          <Reveal dir="up" delay={100}>
-            <h2 className="manifesto__title">
-              WE CREATE <span className="text-gold">EXPERIENCES.</span><br />
-              WE BUILD<br />
-              <span className="text-gold">TALENT.</span><br />
-              WE PRODUCE <span className="text-gold">STORIES.</span>
-            </h2>
-          </Reveal>
-          <Reveal dir="up" delay={250}>
-            <div className="manifesto__footer">
-              <p>A multi-disciplinary creative organization dedicated to the art of production and the impact of entertainment.</p>
-              <div className="manifesto__line" />
-            </div>
-          </Reveal>
+        <div className="mission-strip__items">
+          <Reveal dir="up" delay={120}><div><span>01</span><strong>WE CREATE</strong><em>EXPERIENCES.</em></div></Reveal>
+          <Reveal dir="up" delay={180}><div><span>02</span><strong>WE BUILD</strong><em>TALENT.</em></div></Reveal>
+          <Reveal dir="up" delay={240}><div><span>03</span><strong>WE PRODUCE</strong><em>STORIES.</em></div></Reveal>
         </div>
       </div>
     </section>

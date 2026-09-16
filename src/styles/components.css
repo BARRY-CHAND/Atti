@@ -3661,3 +3661,15 @@
 @media(max-width:1024px) { .about-mission__grid { grid-template-columns:repeat(2,1fr); } .about-foundation__grid { grid-template-columns:repeat(3,1fr); } }
 @media(max-width:768px) { .about-meaning__header,.about-mission__header,.about-foundation__header { grid-template-columns:1fr; gap:2rem; } .about-meaning__grid { grid-template-columns:1fr; } .about-foundation__grid { grid-template-columns:repeat(2,1fr); } }
 @media(max-width:640px) { .about-mission__grid { grid-template-columns:1fr; } .about-foundation__grid { grid-template-columns:1fr; } .about-foundation__grid .legal__item { min-height:110px; } }
+
+/* Compact homepage mission strip */
+.mission-strip { padding-block:clamp(2.5rem,5vw,4rem); background:var(--emerald-deep); border-top:1px solid rgba(176,140,64,.14); border-bottom:1px solid rgba(176,140,64,.14); }
+.mission-strip__head { display:flex; justify-content:space-between; align-items:end; gap:2rem; padding-bottom:1.3rem; border-bottom:1px solid var(--gold-line); }
+.mission-strip__head p { max-width:38ch; color:var(--text-muted); font-size:.85rem; line-height:1.5; }
+.mission-strip__items { display:grid; grid-template-columns:repeat(3,1fr); gap:0; }
+.mission-strip__items > .is-reveal + .is-reveal { border-left:1px solid rgba(176,140,64,.2); }
+.mission-strip__items > .is-reveal > div { display:flex; flex-direction:column; gap:.25rem; min-height:110px; padding:1.35rem 1.5rem 0; }
+.mission-strip__items span { color:var(--gold-soft); font-size:.62rem; letter-spacing:.2em; }
+.mission-strip__items strong { color:var(--ink); font-family:var(--font-display); font-size:clamp(1.25rem,2.2vw,2rem); line-height:1; font-weight:600; }
+.mission-strip__items em { color:var(--gold); font-family:var(--font-display); font-size:clamp(1.15rem,2vw,1.75rem); line-height:1; font-style:normal; }
+@media(max-width:640px) { .mission-strip__head { flex-direction:column; align-items:flex-start; gap:.8rem; } .mission-strip__items { grid-template-columns:1fr; } .mission-strip__items > .is-reveal + .is-reveal { border-left:0; border-top:1px solid rgba(176,140,64,.2); } .mission-strip__items > .is-reveal > div { min-height:0; padding:1rem 0; } }
