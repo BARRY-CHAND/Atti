@@ -114,21 +114,7 @@ function Hero() {
 }
 
 function Introduction() {
-  return (
-    <section className="mission-strip">
-      <div className="container">
-        <div className="mission-strip__head">
-          <Reveal dir="up"><span className="eyebrow">Our Mission</span></Reveal>
-          <Reveal dir="up" delay={80}><p>One platform. Three commitments. A clear standard for the work we create.</p></Reveal>
-        </div>
-        <div className="mission-strip__items">
-          <Reveal dir="up" delay={120}><div><span>01</span><strong>WE CREATE</strong><em>EXPERIENCES.</em></div></Reveal>
-          <Reveal dir="up" delay={180}><div><span>02</span><strong>WE BUILD</strong><em>TALENT.</em></div></Reveal>
-          <Reveal dir="up" delay={240}><div><span>03</span><strong>WE PRODUCE</strong><em>STORIES.</em></div></Reveal>
-        </div>
-      </div>
-    </section>
-  )
+  return null
 }
 
 function BrandIntro() {
@@ -172,6 +158,19 @@ function BrandIntro() {
               <Link to="/about" className="text-link about-home__link">
                 Discover ATTI VERSE <span>↗</span>
               </Link>
+            </Reveal>
+            <Reveal dir="up" delay={400}>
+              <div className="about-home__mission">
+                <div className="about-home__mission-head">
+                  <span className="eyebrow">Our Mission</span>
+                  <span>01 — 03</span>
+                </div>
+                <div className="about-home__mission-items">
+                  <span>We create <b>experiences.</b></span>
+                  <span>We build <b>talent.</b></span>
+                  <span>We produce <b>stories.</b></span>
+                </div>
+              </div>
             </Reveal>
           </div>
         </div>

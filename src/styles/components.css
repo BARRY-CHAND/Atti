@@ -3673,3 +3673,12 @@
 .mission-strip__items strong { color:var(--ink); font-family:var(--font-display); font-size:clamp(1.25rem,2.2vw,2rem); line-height:1; font-weight:600; }
 .mission-strip__items em { color:var(--gold); font-family:var(--font-display); font-size:clamp(1.15rem,2vw,1.75rem); line-height:1; font-style:normal; }
 @media(max-width:640px) { .mission-strip__head { flex-direction:column; align-items:flex-start; gap:.8rem; } .mission-strip__items { grid-template-columns:1fr; } .mission-strip__items > .is-reveal + .is-reveal { border-left:0; border-top:1px solid rgba(176,140,64,.2); } .mission-strip__items > .is-reveal > div { min-height:0; padding:1rem 0; } }
+
+/* Mission integrated into Who We Are */
+.about-home__mission { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--gold-line); }
+.about-home__mission-head { display:flex; justify-content:space-between; align-items:center; color:var(--text-faint); font-size:.58rem; letter-spacing:.2em; }
+.about-home__mission-head .eyebrow { color:var(--gold-soft); }
+.about-home__mission-items { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; margin-top:.9rem; }
+.about-home__mission-items span { color:var(--ink); font-family:var(--font-display); font-size:clamp(.85rem,1.3vw,1.05rem); line-height:1.15; }
+.about-home__mission-items b { display:block; color:var(--gold); font-weight:500; }
+@media(max-width:640px) { .about-home__mission-items { grid-template-columns:1fr; gap:.55rem; } .about-home__mission-items span { display:flex; gap:.35rem; } .about-home__mission-items b { display:inline; } }
