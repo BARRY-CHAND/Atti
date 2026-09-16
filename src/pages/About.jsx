@@ -141,15 +141,13 @@ function Vision() {
 
 function Mission() {
   return (
-    <section className="section">
+    <section className="section about-mission">
       <div className="container">
-        <SectionHeading
-          center
-          eyebrow="Mission"
-          title="WHAT WE ARE BUILT TO DO"
-          subtitle="Eight commitments that guide how ATTI VERSE organizes, creates and grows."
-        />
-        <div className="mission-num" style={{ marginTop: '2.5rem' }}>
+        <div className="about-mission__header">
+          <SectionHeading eyebrow="Mission / Operating Commitments" title="WHAT WE ARE BUILT TO DO" />
+          <p>Eight operating principles translate the ATTI VERSE vision into consistent creative work.</p>
+        </div>
+        <div className="mission-num about-mission__grid">
           {MISSION_ITEMS.map((text, i) => (
             <Reveal key={text} dir="up" delay={(i % 2) * 80}>
               <article className="mission-num__item">

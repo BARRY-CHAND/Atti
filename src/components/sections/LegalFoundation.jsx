@@ -6,16 +6,13 @@ import { LEGAL_FOUNDATION, LEGAL_FOUNDATION_NOTE } from '../../data/organization
 // "Built on a professional foundation." — verified registrations only.
 function LegalFoundation() {
   return (
-    <section className="section section--dark">
+    <section className="section section--dark about-foundation">
       <div className="container">
-        <SectionHeading
-          center
-          onDark
-          eyebrow="Professional Foundation"
-          title="BUILT ON A PROFESSIONAL FOUNDATION."
-          subtitle="The verified registrations and governance that back the creative work."
-        />
-        <div className="legal" style={{ marginTop: '2rem' }}>
+        <div className="about-foundation__header">
+          <SectionHeading onDark eyebrow="Professional Foundation / Governance" title="BUILT ON A PROFESSIONAL FOUNDATION." />
+          <p>Creative ambition is supported by verified registrations, defined governance and a responsible operating base.</p>
+        </div>
+        <div className="legal about-foundation__grid">
           {LEGAL_FOUNDATION.map((item, i) => (
             <Reveal key={item} dir="up" delay={(i % 2) * 80}>
               <article className="legal__item">

@@ -5,16 +5,14 @@ import { NAME_MEANING } from '../../data/organization.js'
 // "What ATTI VERSE Means" — elegant storytelling about the name.
 function WhatMeans() {
   return (
-    <section className="section section--light-green">
+    <section className="section section--light-green about-meaning">
       <div className="container">
-        <SectionHeading
-          center
-          eyebrow="The Name"
-          title="WHAT ATTI VERSE MEANS"
-          subtitle="A name built from the values the organization lives by."
-        />
+        <div className="about-meaning__header">
+          <SectionHeading eyebrow="The Name / Brand System" title="WHAT ATTI VERSE MEANS" />
+          <p>A name built from the values, creative language and shared universe the organization is designed to grow.</p>
+        </div>
 
-        <div className="meaning">
+        <div className="meaning about-meaning__grid">
           <Reveal dir="up">
             <div className="meaning__panel">
               <div className="meaning__panel-head">

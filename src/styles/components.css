@@ -3638,3 +3638,26 @@
 .about-leadership__grid .team-card__focus { font-size:.78rem; line-height:1.55; }
 @media(max-width:900px) { .about-leadership__header { grid-template-columns:1fr; gap:2rem; } }
 @media(max-width:640px) { .about-leadership__bar { flex-direction:column; gap:.45rem; font-size:.54rem; } .about-leadership__grid { margin-top:1rem; } }
+
+/* About page systems: brand, operating model, foundation and leadership */
+.about-meaning__header,.about-mission__header,.about-foundation__header { display:grid; grid-template-columns:minmax(0,1fr) minmax(250px,.55fr); gap:clamp(2rem,8vw,8rem); align-items:end; }
+.about-meaning__header > p,.about-mission__header > p,.about-foundation__header > p { max-width:35ch; color:var(--text-muted); border-left:1px solid var(--gold); padding-left:1.25rem; line-height:1.65; }
+.about-meaning__grid { margin-top:clamp(3rem,6vw,5rem); grid-template-columns:1fr 1fr; gap:1rem; }
+.about-meaning .meaning__panel { border-radius:0; border:1px solid rgba(176,140,64,.24); background:rgba(7,13,13,.18); box-shadow:none; }
+.about-meaning .meaning__panel--verse { background:var(--emerald-deep); }
+.about-meaning .meaning__panel-head { border-bottom:1px solid var(--gold-line); }
+.about-meaning .meaning__result { max-width:760px; margin:2rem auto 0; text-align:left; border-left:3px solid var(--gold); padding:1.2rem 1.5rem; background:rgba(255,255,255,.04); }
+.about-mission { background:linear-gradient(180deg,var(--emerald-deep),var(--emerald-bg)); }
+.about-mission__grid { max-width:none; grid-template-columns:repeat(4,1fr); gap:.8rem; margin-top:clamp(3rem,6vw,5rem); }
+.about-mission__grid .mission-num__item { min-height:170px; display:flex; flex-direction:column; justify-content:space-between; padding:1.3rem; border:1px solid rgba(176,140,64,.22); background:rgba(255,255,255,.025); transition:transform .4s var(--ease-out),background .4s,border-color .4s; }
+.about-mission__grid .mission-num__item:hover { transform:translateY(-6px); border-color:var(--gold-line); background:rgba(176,140,64,.07); }
+.about-mission__grid .mission-num__text { font-size:.9rem; line-height:1.45; }
+.about-foundation { background:var(--emerald-deep); }
+.about-foundation__grid { max-width:none; grid-template-columns:repeat(5,1fr); gap:.7rem; margin-top:clamp(3rem,5vw,4rem); }
+.about-foundation__grid .legal__item { min-height:150px; flex-direction:column; align-items:flex-start; justify-content:space-between; border-radius:0; border-color:rgba(176,140,64,.24); padding:1.2rem; background:rgba(255,255,255,.025); }
+.about-foundation__grid .legal__item svg { width:22px; height:22px; }
+.about-foundation__grid .legal__item span { font-size:.86rem; line-height:1.4; }
+.about-foundation .legal__note { max-width:760px; text-align:left; border-left:1px solid var(--gold-line); padding-left:1rem; }
+@media(max-width:1024px) { .about-mission__grid { grid-template-columns:repeat(2,1fr); } .about-foundation__grid { grid-template-columns:repeat(3,1fr); } }
+@media(max-width:768px) { .about-meaning__header,.about-mission__header,.about-foundation__header { grid-template-columns:1fr; gap:2rem; } .about-meaning__grid { grid-template-columns:1fr; } .about-foundation__grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:640px) { .about-mission__grid { grid-template-columns:1fr; } .about-foundation__grid { grid-template-columns:1fr; } .about-foundation__grid .legal__item { min-height:110px; } }
