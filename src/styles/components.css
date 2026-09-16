@@ -3773,3 +3773,35 @@
 .service-empty { color:var(--text-muted); }
 @media(max-width:900px) { .service-overview,.service-capabilities { grid-template-columns:1fr; gap:2.5rem; } .service-process { grid-template-columns:repeat(2,1fr); } .service-process__step:nth-child(2) { border-right:0; } .service-process__step:nth-child(-n+2) { border-bottom:1px solid rgba(176,140,64,.2); } }
 @media(max-width:640px) { .service-overview__title { font-size:clamp(2.5rem,12vw,4rem); } .service-project { grid-template-columns:1fr auto; gap:.45rem .8rem; } .service-project h3 { grid-column:1 / -1; order:2; } .service-project > span { order:1; } .service-project strong { order:1; } .service-project p { grid-column:1 / -1; order:3; text-align:left; } .service-process { grid-template-columns:1fr; } .service-process__step,.service-process__step:nth-child(2) { border-right:0; border-bottom:1px solid rgba(176,140,64,.2); min-height:0; } .service-process__step:last-child { border-bottom:0; } .service-process__step h3 { margin-top:2rem; } .service-gallery { grid-template-columns:1fr; grid-template-rows:none; } .service-gallery__item,.service-gallery__item--large { grid-row:auto; min-height:220px; } .service-other { grid-template-columns:1fr; } }
+
+/* Industrial Contact + Footer refinement */
+.contact-page .page-header--image { min-height:62vh; }
+.contact-page .page-header__title { max-width:11ch; font-size:clamp(3rem,8vw,7rem); }
+.contact-page .contact-grid { align-items:start; gap:clamp(2.5rem,8vw,8rem); }
+.contact-page .contact-cat { display:grid; grid-template-columns:130px 1fr; min-height:130px; border:1px solid rgba(176,140,64,.2); background:rgba(255,255,255,.025); transition:transform .4s var(--ease-out),border-color .4s; }
+.contact-page .contact-cat:hover { transform:translateX(6px); border-color:var(--gold-line); }
+.contact-page .contact-cat__media { position:relative; overflow:hidden; }
+.contact-page .contact-cat__media .img,.contact-page .contact-cat__media .img__el { width:100%; height:100%; }
+.contact-page .contact-cat__body { display:flex; flex-direction:column; justify-content:center; padding:1.1rem 1.3rem; }
+.contact-page .contact-cat__title { color:var(--white); font-family:var(--font-display); font-size:1.25rem; }
+.contact-page .contact-cat__desc { margin-top:.45rem; color:var(--text-muted); font-size:.8rem; line-height:1.5; }
+.contact-page .form-card { border-radius:0; border:1px solid var(--gold-line); background:rgba(255,255,255,.035); padding:clamp(1.5rem,4vw,2.7rem); box-shadow:var(--shadow-soft); }
+.contact-page .form-card::before { content:'PROJECT INTAKE / 01'; display:block; margin-bottom:1.6rem; color:var(--gold-soft); font-size:.58rem; letter-spacing:.22em; }
+.contact-page .field label { color:var(--gold-soft); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; }
+.contact-page .field input,.contact-page .field select,.contact-page .field textarea { border-radius:0; border-color:rgba(176,140,64,.28); background:rgba(7,13,13,.45); }
+.contact-page .field input:focus,.contact-page .field select:focus,.contact-page .field textarea:focus { border-color:var(--gold); box-shadow:0 0 0 2px rgba(176,140,64,.1); }
+.contact-page .form-note { border-top:1px solid rgba(176,140,64,.18); padding-top:.9rem; }
+.footer { border-top:1px solid var(--gold-line); background:var(--emerald-deep); }
+.footer__top { grid-template-columns:1.6fr .8fr .8fr 1fr; gap:clamp(2rem,5vw,5rem); padding-block:clamp(3rem,7vw,6rem); }
+.footer__brand-name { font-family:var(--font-display); font-size:clamp(2rem,4vw,3.6rem); letter-spacing:-.04em; }
+.footer__tagline { color:var(--gold); font-size:.76rem; letter-spacing:.2em; text-transform:uppercase; }
+.footer__brand-line { margin-top:1.5rem; color:var(--gold-soft); font-size:.58rem; letter-spacing:.16em; text-transform:uppercase; }
+.footer__desc { max-width:32ch; margin-top:1rem; color:var(--text-muted); font-size:.82rem; line-height:1.6; }
+.footer__heading { color:var(--gold-soft); font-size:.62rem; letter-spacing:.22em; text-transform:uppercase; }
+.footer__links { margin-top:1rem; display:grid; gap:.55rem; }
+.footer__link { color:var(--text-muted); font-size:.82rem; transition:color .25s,padding-left .25s; }
+.footer__link:hover { color:var(--gold); padding-left:.35rem; }
+.footer__contact { margin-top:1rem; display:grid; gap:.7rem; }
+.footer__bottom { border-top:1px solid rgba(176,140,64,.18); padding-block:1rem; color:var(--text-faint); font-size:.62rem; letter-spacing:.05em; }
+@media(max-width:900px) { .footer__top { grid-template-columns:1.4fr 1fr 1fr; } .footer__top > :last-child { grid-column:1 / -1; } }
+@media(max-width:640px) { .contact-page .contact-cat { grid-template-columns:95px 1fr; min-height:110px; } .contact-page .contact-cat:hover { transform:none; } .footer__top { grid-template-columns:1fr 1fr; gap:2.2rem 1.5rem; } .footer__top > :first-child { grid-column:1 / -1; } .footer__top > :last-child { grid-column:1 / -1; } .footer__bottom { display:grid; gap:.6rem; } }

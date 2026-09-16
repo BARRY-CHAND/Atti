@@ -89,7 +89,7 @@ function Contact() {
   }
 
   return (
-    <>
+    <div className="contact-page">
       <Seo
         title="Contact | Let's Work Together — ATTI VERSE"
         description="Have an event, production, creative project or collaboration in mind? Contact ATTI VERSE Entertainment & Productions."
@@ -100,6 +100,7 @@ function Contact() {
         crumb="Contact"
         title="LET'S WORK TOGETHER"
         subtitle="Have an event, production, creative project or collaboration in mind? Tell us what you're building. Let's create something memorable together."
+        image={IMAGES.services.eventManagement}
       />
 
       <InstitutionalCTA />
@@ -252,7 +253,7 @@ function Contact() {
           </>
         }
       />
-    </>
+    </div>
   )
 }
 
