@@ -3517,3 +3517,9 @@
     margin-top: .65rem;
   }
 }
+
+/* Desktop hero: remove the extra tagline between headline and buttons */
+@media (min-width: 641px) {
+  .hero.hero--slideshow .hero__tagline { display: none; }
+  .hero.hero--slideshow .hero__actions { margin-top: .75rem; }
+}
