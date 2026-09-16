@@ -3569,3 +3569,13 @@
 .why-attii__arrow { align-self:flex-end; margin-top:1.3rem; opacity:1; transform:none; }
 @media(max-width:900px) { .about-home__grid,.why-attii__head { grid-template-columns:1fr; gap:3rem; } .about-home__title { max-width:16ch; } .why-attii__list { grid-template-columns:repeat(3,1fr); } }
 @media(max-width:640px) { .about-home__visual { padding-left:1rem; } .about-home__visual::before { inset:1rem auto 0 0; } .about-home__index { top:-1.2rem; } .about-home__title { font-size:clamp(2rem,9vw,3rem); } .why-attii__statement { margin-top:-1rem; } .why-attii__list { grid-template-columns:1fr; margin-top:2.5rem; } .why-attii__row { min-height:0; } .why-attii__title { margin-top:2rem; } }
+
+/* Keep each statement phrase visually connected */
+.intro-statement .is-reveal + .is-reveal .intro-statement__line--gold {
+  margin-top: -.18em;
+}
+.intro-statement__line { line-height: .98; }
+@media (max-width: 640px) {
+  .intro-statement .is-reveal + .is-reveal .intro-statement__line--gold { margin-top: -.12em; }
+  .intro-statement__line { line-height: .96; }
+}
