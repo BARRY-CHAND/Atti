@@ -204,15 +204,24 @@ function Structure() {
 
 function Leadership() {
   return (
-    <section className="section">
+    <section className="section about-leadership">
       <div className="container">
-        <SectionHeading
-          center
-          eyebrow="Leadership"
-          title="THE PEOPLE BEHIND THE VISION"
-          subtitle="The founders who set the direction, the standards and the culture of ATTI VERSE."
-        />
-        <div className="grid-4" style={{ marginTop: '2.5rem' }}>
+        <div className="about-leadership__header">
+          <div>
+            <SectionHeading
+              eyebrow="Leadership / Executive Team"
+              title={<>THE PEOPLE BEHIND <span className="text-gold">THE VISION.</span></>}
+            />
+          </div>
+          <Reveal dir="left" delay={120}>
+            <p>Direction, governance and delivery are led by a founding team with clearly defined responsibilities.</p>
+          </Reveal>
+        </div>
+        <div className="about-leadership__bar">
+          <span>ATTI VERSE / LEADERSHIP</span>
+          <span>01 — 04 / EXECUTIVE PROFILES</span>
+        </div>
+        <div className="grid-4 about-leadership__grid">
           {LEADERSHIP.map((member, i) => (
             <TeamCard key={member.id} member={member} index={i} />
           ))}
