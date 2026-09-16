@@ -3491,3 +3491,29 @@
     letter-spacing: .14em;
   }
 }
+
+/* Tight desktop hero rhythm around CREATE THE MOMENT */
+@media (min-width: 641px) {
+  .hero.hero--slideshow .hero__title-block {
+    gap: .12rem;
+    margin-bottom: .15rem;
+  }
+  .hero.hero--slideshow .hero__title-line--attii {
+    font-size: clamp(1.7rem, 3.2vw, 3rem);
+    line-height: 1;
+  }
+  .hero.hero--slideshow .hero__title-line--verse {
+    font-size: clamp(1.45rem, 2.7vw, 2.55rem);
+    line-height: 1;
+  }
+  .hero.hero--slideshow .hero__gold-rule {
+    margin: .45rem 0 .35rem;
+  }
+  .hero.hero--slideshow .hero__tagline {
+    margin-top: 0;
+    line-height: 1.35;
+  }
+  .hero.hero--slideshow .hero__actions {
+    margin-top: .65rem;
+  }
+}
