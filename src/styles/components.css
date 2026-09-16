@@ -3935,3 +3935,19 @@
 .services-index__row:hover .services-index__title { color:var(--gold); }
 @media(max-width:900px) { .service-gallery--contact-sheet { grid-template-columns:repeat(2,1fr); } }
 @media(max-width:640px) { .service-gallery--contact-sheet { grid-template-columns:1fr; grid-template-rows:none; } .service-gallery--contact-sheet .service-gallery__item,.service-gallery--contact-sheet .service-gallery__item--large { aspect-ratio:4 / 3; } }
+
+/* Exact service-name hierarchy */
+/* Homepage: service names gold, capability tags muted */
+.services-index .services-index__title { color:var(--gold-soft); }
+.services-index .services-index__caps { color:var(--text-faint); }
+.services-index__row:hover .services-index__title { color:var(--gold); }
+/* Full Services page: titles gold, descriptive/tag text stays muted */
+.services-catalog .service-catalog__body h2 { color:var(--gold-soft); }
+.services-catalog .service-catalog__tagline,
+.services-catalog .service-catalog__description,
+.services-catalog .service-catalog__footer span { color:var(--text-muted); }
+.services-catalog .service-catalog__tagline { color:var(--text-muted); }
+/* Every service detail page: Other Services names gold */
+.service-other--industrial .service-other__body h3 { color:var(--gold-soft); }
+.service-other--industrial .service-other__body small,
+.service-other--industrial .service-other__body p { color:var(--text-muted); }
