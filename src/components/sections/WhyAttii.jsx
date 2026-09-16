@@ -6,9 +6,9 @@ import { WHY_BLOCKS } from '../../data/organization.js'
 // "Why ATTI VERSE" — More than entertainment. A structured creative organization.
 function WhyAttii() {
   return (
-    <section className="section">
+    <section className="section why-attii-section">
       <div className="container">
-        <div className="why-attii">
+        <div className="why-attii__head">
           <div className="why-attii__intro">
             <SectionHeading
               eyebrow="Why ATTI VERSE"
@@ -34,12 +34,19 @@ function WhyAttii() {
             </Reveal>
             <Reveal dir="up" delay={320}>
               <Link to="/about" className="text-link mt-lg">
-                See How We Are Built →
+                See How We Are Built <span>↗</span>
               </Link>
             </Reveal>
           </div>
+          <Reveal dir="left" delay={120}>
+            <div className="why-attii__statement">
+              <span>OUR STANDARD</span>
+              <p>Creative energy, backed by structure.</p>
+            </div>
+          </Reveal>
+        </div>
 
-          <div className="why-attii__list">
+        <div className="why-attii__list">
             {WHY_BLOCKS.map((block, i) => (
               <Reveal key={block.number} dir="up" delay={i * 90}>
                 <article className="why-attii__row">
@@ -48,13 +55,10 @@ function WhyAttii() {
                     <h3 className="why-attii__title">{block.title}</h3>
                     <p className="why-attii__note">{block.note}</p>
                   </div>
-                  <span className="why-attii__arrow" aria-hidden="true">
-                    →
-                  </span>
+                  <span className="why-attii__arrow" aria-hidden="true">↗</span>
                 </article>
               </Reveal>
             ))}
-          </div>
         </div>
       </div>
     </section>

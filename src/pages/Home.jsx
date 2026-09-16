@@ -142,46 +142,47 @@ function Introduction() {
 
 function BrandIntro() {
   return (
-    <section className="section">
-      <div className="container grid-2">
-        <Reveal dir="right" delay={100}>
-          <div style={{ position: 'relative' }}>
+    <section className="section about-home">
+      <div className="container">
+        <div className="about-home__grid">
+          <Reveal dir="right" delay={100}>
+            <div className="about-home__visual">
             <Img
               src={IMAGES.aboutHome}
               alt="The ATTI VERSE creative ecosystem"
               aspect="4 / 3"
-              style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-soft)' }}
+              className="about-home__image"
             />
-            <div className="eyebrow img-anchor">
-              CREATIVE ECOSYSTEM
+              <div className="about-home__stamp">CREATIVE ECOSYSTEM</div>
+              <div className="about-home__index">01 <span>/ ABOUT</span></div>
             </div>
+          </Reveal>
+          <div className="about-home__copy">
+            <Reveal dir="up">
+              <span className="eyebrow">Who We Are</span>
+              <h2 className="section-title about-home__title">
+                A growing universe of <span className="text-gold">talent, creativity</span> and production.
+              </h2>
+            </Reveal>
+            <Reveal dir="up" delay={120}>
+              <p className="about-home__lead">
+                {SITE.fullName} brings together entertainment, event management, media production,
+                creative services and talented creators under one growing platform.
+              </p>
+            </Reveal>
+            <Reveal dir="up" delay={220}>
+              <p className="about-home__body">
+                What began as a college-based creative initiative has evolved into a structured
+                organization with leadership, divisions and operational systems — built for serious,
+                scalable growth.
+              </p>
+            </Reveal>
+            <Reveal dir="up" delay={320}>
+              <Link to="/about" className="text-link about-home__link">
+                Discover ATTI VERSE <span>↗</span>
+              </Link>
+            </Reveal>
           </div>
-        </Reveal>
-        <div>
-          <Reveal dir="up">
-            <span className="eyebrow">Who We Are</span>
-            <h2 className="section-title" style={{ marginTop: '1.1rem', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)' }}>
-              A growing universe of talent, creativity and production.
-            </h2>
-          </Reveal>
-          <Reveal dir="up" delay={120}>
-            <p style={{ color: 'var(--text-muted)', marginTop: '1.3rem' }}>
-              {SITE.fullName} brings together entertainment, event management, media production,
-              creative services and talented creators under one growing platform.
-            </p>
-          </Reveal>
-          <Reveal dir="up" delay={220}>
-            <p style={{ color: 'var(--text-muted)', marginTop: '1.1rem' }}>
-              What began as a college-based creative initiative has evolved into a structured
-              organization with leadership, divisions and operational systems — built for serious,
-              scalable growth.
-            </p>
-          </Reveal>
-          <Reveal dir="up" delay={320}>
-            <Link to="/about" className="text-link mt-lg">
-              Discover ATTI VERSE →
-            </Link>
-          </Reveal>
         </div>
       </div>
     </section>
