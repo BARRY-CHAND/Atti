@@ -3523,3 +3523,16 @@
   .hero.hero--slideshow .hero__tagline { display: none; }
   .hero.hero--slideshow .hero__actions { margin-top: .75rem; }
 }
+
+/* Final desktop hero polish */
+@media (min-width: 641px) {
+  .hero.hero--slideshow .hero__inner {
+    transform: translateY(-2.5rem);
+  }
+  .hero.hero--slideshow .hero__gold-rule {
+    display: none;
+  }
+  .hero.hero--slideshow .hero__actions {
+    margin-top: .8rem;
+  }
+}
