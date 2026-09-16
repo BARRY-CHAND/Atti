@@ -3921,3 +3921,17 @@
 .service-gallery--contact-sheet figcaption small { color:var(--gold-soft); font-size:.52rem; letter-spacing:.15em; }
 @media(max-width:900px) { .service-process--case-study { grid-template-columns:repeat(2,1fr); } .service-process--case-study .service-process__step:nth-child(2) { border-right:0; } .service-process--case-study .service-process__step:nth-child(-n+2) { border-bottom:1px solid rgba(176,140,64,.22); } }
 @media(max-width:640px) { .service-process__intro,.service-gallery__intro { display:block; } .service-process__intro > p,.service-gallery__intro > p { margin-top:1rem; } .service-process--case-study { grid-template-columns:1fr; } .service-process--case-study .service-process__step,.service-process--case-study .service-process__step:nth-child(2) { min-height:0; border-right:0; border-bottom:1px solid rgba(176,140,64,.22); } .service-process--case-study .service-process__step:last-child { border-bottom:0; } .service-process--case-study .service-process__step h3 { margin-top:2rem; } .service-gallery--contact-sheet { grid-template-columns:1fr; grid-template-rows:repeat(3,230px); } .service-gallery--contact-sheet .service-gallery__item--large { grid-row:auto; } }
+
+/* Final Visual Moments and service-title polish */
+.service-gallery--contact-sheet { grid-template-columns:repeat(3,1fr); grid-template-rows:none; }
+.service-gallery--contact-sheet .service-gallery__item,
+.service-gallery--contact-sheet .service-gallery__item--large { grid-column:auto; grid-row:auto; aspect-ratio:4 / 3; min-height:0; }
+.service-gallery--contact-sheet .service-gallery__item .img,
+.service-gallery--contact-sheet .service-gallery__item .img__el { aspect-ratio:4 / 3; object-fit:cover; }
+.service-catalog__body h2,
+.services-index__title,
+.service-other--industrial .service-other__body h3,
+.service-other__body h3 { color:var(--gold-soft); }
+.services-index__row:hover .services-index__title { color:var(--gold); }
+@media(max-width:900px) { .service-gallery--contact-sheet { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:640px) { .service-gallery--contact-sheet { grid-template-columns:1fr; grid-template-rows:none; } .service-gallery--contact-sheet .service-gallery__item,.service-gallery--contact-sheet .service-gallery__item--large { aspect-ratio:4 / 3; } }
