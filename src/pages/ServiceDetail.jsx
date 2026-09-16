@@ -52,7 +52,7 @@ function ServiceDetail() {
       <section className="section service-projects-section">
         <div className="container">
           <SectionHeading eyebrow="03 / Relevant Work" title="PROJECT EXAMPLES" subtitle="Documented work within this service. New projects are added as they are verified." />
-          {service.portfolio?.length > 0 ? <div className="service-project-cards" style={{ marginTop: '2rem' }}>{service.portfolio.map((p, i) => <Reveal key={p.title} dir="up" delay={i * 80}><article className="service-project-card"><div className="service-project-card__top"><span>{service.number} / {p.category}</span><strong>{p.year === 'TBA' ? PLACEHOLDER.tba : p.year}</strong></div><h3>{p.title}</h3><p>Project details coming soon.</p><Link to="/contact">Discuss a similar brief ↗</Link></article></Reveal>)}</div> : <p className="service-empty">Project details coming soon.</p>}
+          {service.portfolio?.length > 0 ? <div className="service-project-cards" style={{ marginTop: '2rem' }}>{service.portfolio.map((p, i) => <Reveal key={p.title} dir="up" delay={i * 80}><article className="service-project-card"><div className="service-project-card__top"><span>{service.number} / {p.category}</span><strong>{p.year === 'TBA' ? PLACEHOLDER.tba : p.year}</strong></div><h3>{p.title}</h3><p>Project details coming soon.</p><Link to={`/services/${slug}/project/${i}`}>View event story ↗</Link></article></Reveal>)}</div> : <p className="service-empty">Project details coming soon.</p>}
         </div>
       </section>
 
