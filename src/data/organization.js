@@ -168,6 +168,16 @@ export const INSTITUTIONAL_POINTS = [
   'Talent',
 ]
 
+// --- Collaboration pathway (brands, creators & partners) ----------
+export const COLLABORATION_POINTS = [
+  'Brand collaborations',
+  'Institution partnerships',
+  'Creator partnerships',
+  'Event partnerships',
+  'Production tie-ups',
+  'Media & creative tie-ups',
+]
+
 // --- Generic production / creative process ------------------------
 export const PROCESS_STEPS = [
   {

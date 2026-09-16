@@ -71,7 +71,7 @@ function Certificates() {
           {CERTIFICATES.map((cert, i) => (
             <Reveal key={cert.id} dir="up" delay={(i % 3) * 100}>
               <article className="event-card">
-                <div className="event-card__media" style={{ height: 280 }}>
+                <div className="event-card__media" style={{ height: 200 }}>
                   <Img src={cert.src} alt={cert.label} />
                 </div>
                 <div className="event-card__body">

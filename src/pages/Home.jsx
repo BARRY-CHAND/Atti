@@ -5,13 +5,10 @@ import Reveal from '../components/ui/Reveal.jsx'
 import Img from '../components/ui/Img.jsx'
 import Icon from '../components/ui/Icon.jsx'
 import CTASection from '../components/ui/CTASection.jsx'
-import EventCard from '../components/cards/EventCard.jsx'
 import WhyAttii from '../components/sections/WhyAttii.jsx'
 import ServicesIndex from '../components/sections/ServicesIndex.jsx'
 import TalentSection from '../components/sections/TalentSection.jsx'
-import FutureDirection from '../components/sections/FutureDirection.jsx'
 import { IMAGES } from '../config/images.js'
-import { FEATURED_EVENTS, EVENT_PLACEHOLDERS } from '../data/events.js'
 import { WORK } from '../data/work.js'
 import { LEADERSHIP } from '../data/team.js'
 
@@ -108,43 +105,25 @@ function Hero() {
 
 function WorksAndEvents() {
   const featured = WORK.filter((w) => w.featured)
-  const events = [...FEATURED_EVENTS, ...EVENT_PLACEHOLDERS].slice(0, 3)
   return (
     <section className="section section--dark">
       <div className="container">
-        <div className="section-head-row">
-          <div className="section-head" style={{ marginBottom: 0 }}>
-            <Reveal dir="up">
-              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
-                Works &amp; Events
-              </span>
-              <h2 className="section-title section-head__title">
-                MOMENTS WE'VE <span className="text-gold">CREATED.</span>
-              </h2>
-            </Reveal>
-          </div>
-          <Reveal dir="up" delay={120}>
-            <Link to="/work" className="text-link text-link--dark">
-              View All Work →
-            </Link>
+        <div className="section-head" style={{ marginBottom: 0 }}>
+          <Reveal dir="up">
+            <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
+              Works
+            </span>
+            <h2 className="section-title section-head__title">
+              MOMENTS WE'VE <span className="text-gold">CREATED.</span>
+            </h2>
           </Reveal>
         </div>
 
-        <div className="work-editorial" style={{ marginTop: 'clamp(3rem,6vw,4.5rem)' }}>
-          <div className="work-editorial__head">
-            <Reveal dir="up">
-              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
-                Selected Work
-              </span>
-            </Reveal>
-          </div>
+        <div className="work-editorial work-editorial--full" style={{ marginTop: 'clamp(2.5rem,5vw,4rem)' }}>
           <div className="work-editorial__grid">
             {featured.slice(0, 3).map((project, i) => (
               <Reveal key={project.id} dir="up" delay={i * 80}>
-                <Link
-                  to="/work"
-                  className={`work-editorial__item ${i === 0 ? 'work-editorial__item--large' : ''}`}
-                >
+                <Link to="/work" className="work-editorial__item">
                   <div className="work-editorial__media">
                     <Img src={project.image} alt={`${project.title} — ${project.category}`} />
                   </div>
@@ -159,27 +138,9 @@ function WorksAndEvents() {
           </div>
         </div>
 
-        <div className="section-head-row" style={{ marginTop: 'clamp(3.5rem,7vw,6rem)' }}>
-          <div className="section-head" style={{ marginBottom: 0 }}>
-            <Reveal dir="up">
-              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
-                Live Events
-              </span>
-              <h3 className="section-title" style={{ fontSize: 'clamp(1.6rem,3vw,2.4rem)' }}>
-                LIVE. UNFORGETTABLE. <span className="text-gold">VERSE.</span>
-              </h3>
-            </Reveal>
-          </div>
-          <Reveal dir="up" delay={150}>
-            <Link to="/events" className="text-link text-link--dark">
-              View All Events →
-            </Link>
-          </Reveal>
-        </div>
-        <div className="grid-3" style={{ marginTop: '2rem' }}>
-          {events.map((event, i) => (
-            <EventCard key={event.id} event={event} index={i} />
-          ))}
+        <div className="work-actions">
+          <Link to="/work" className="btn btn--outline-gold"><span>More Works</span></Link>
+          <Link to="/events" className="btn btn--gold"><span>Events</span></Link>
         </div>
       </div>
     </section>
@@ -195,7 +156,7 @@ function PeopleBehind() {
             <div className="section-head-row">
               <Reveal dir="up">
                 <span className="eyebrow">Leadership</span>
-                <h2 className="section-title" style={{ marginTop: '1.1rem', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+                <h2 className="section-title" style={{ marginTop: '1.1rem' }}>
                   THE PEOPLE<br />
                   <span className="text-gold">BEHIND THE VERSE.</span>
                 </h2>
@@ -246,7 +207,6 @@ function Home() {
       <WorksAndEvents />
       <PeopleBehind />
       <TalentSection />
-      <FutureDirection />
       <CTASection
         title="LET'S CREATE SOMETHING WORTH REMEMBERING."
         copy={

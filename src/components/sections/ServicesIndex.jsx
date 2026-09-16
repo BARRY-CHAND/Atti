@@ -47,7 +47,7 @@ function ServicesIndex() {
         <div className="services-index__head">
           <Reveal dir="up">
             <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>Services</span>
-            <h2 className="section-title" style={{ marginTop: '1.1rem', fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>
+            <h2 className="section-title" style={{ marginTop: '1.1rem' }}>
               SIX DISCIPLINES.<br />
               <span className="text-gold">ONE ECOSYSTEM.</span>
             </h2>

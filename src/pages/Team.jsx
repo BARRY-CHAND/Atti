@@ -1,9 +1,11 @@
 import Seo from '../components/ui/Seo.jsx'
 import Reveal from '../components/ui/Reveal.jsx'
+import Img from '../components/ui/Img.jsx'
 import SectionHeading from '../components/ui/SectionHeading.jsx'
 import PageHeader from '../components/ui/PageHeader.jsx'
-import TeamCard from '../components/cards/TeamCard.jsx'
 import CTASection from '../components/ui/CTASection.jsx'
+import ProductionShowcase from '../components/sections/ProductionShowcase.jsx'
+import OrganizationTree from '../components/sections/OrganizationTree.jsx'
 import { LEADERSHIP, TEAM_CATEGORIES } from '../data/team.js'
 import { PLACEHOLDER } from '../config/site.js'
 
@@ -17,9 +19,23 @@ function Leadership() {
           title="THE DIRECTION OF THE VERSE"
           subtitle="Every performance, production and event is powered by people who bring their own talent, creativity and commitment."
         />
-        <div className="grid-4">
+        <div className="grid-4 lead-grid">
           {LEADERSHIP.map((member, i) => (
-            <TeamCard key={member.id} member={member} index={i} />
+            <Reveal key={member.id} dir="up" delay={i * 90}>
+              <article className="founder-card">
+                <div className="founder-card__frame">
+                  <Img src={member.image} alt={member.name} priority={i === 0} />
+                  <span className="founder-card__index">{String(i + 1).padStart(2, '0')} / THE FOUNDERS</span>
+                </div>
+                <div className="founder-card__info">
+                  <h3 className="founder-card__name">{member.name}</h3>
+                  <p className="founder-card__role">{member.role}</p>
+                  {member.designation && (
+                    <p className="founder-card__designation">{member.designation}</p>
+                  )}
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -93,6 +109,22 @@ function Categories() {
   )
 }
 
+function Structure() {
+  return (
+    <section className="section section--off-white">
+      <div className="container">
+        <SectionHeading
+          center
+          eyebrow="Organizational Structure"
+          title={<>BUILT WITH STRUCTURE.<br /><span className="text-gold">DRIVEN BY CREATIVITY.</span></>}
+          subtitle="Executive leadership and governance oversee five dedicated divisions."
+        />
+        <OrganizationTree />
+      </div>
+    </section>
+  )
+}
+
 function Team() {
   return (
     <>
@@ -110,6 +142,8 @@ function Team() {
       <Leadership />
       <Responsibilities />
       <Categories />
+      <Structure />
+      <ProductionShowcase />
       <CTASection
         copy={
           <>

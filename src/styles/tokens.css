@@ -48,7 +48,7 @@
   /* Spacing & layout */
   --container: 1200px;
   --container-wide: 1400px;
-  --section-gap: clamp(5rem, 10vw, 8.5rem);
+  --section-gap: clamp(3.5rem, 6.5vw, 5.5rem);
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
@@ -89,8 +89,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 14px;
+  line-height: 1.7;
   color: var(--ink);
   background: var(--emerald-bg);
   overflow-x: hidden;
@@ -163,7 +163,7 @@ h6 {
 }
 
 .display-title {
-  font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+  font-size: clamp(2rem, 4.8vw, 4rem);
   font-weight: 700;
   letter-spacing: var(--tracking-display);
 }
@@ -174,7 +174,7 @@ h6 {
 }
 
 .section-title {
-  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
   letter-spacing: var(--tracking-display);
 }
 
@@ -183,7 +183,7 @@ h6 {
 }
 
 .card-title {
-  font-size: 1.35rem;
+  font-size: 1.1rem;
 }
 
 /* Gold gradient text */
@@ -269,7 +269,7 @@ h6 {
 
 .section-head {
   max-width: 760px;
-  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .section-head--center {
@@ -287,7 +287,7 @@ h6 {
 
 .section-head__sub {
   margin-top: 1rem;
-  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  font-size: clamp(0.85rem, 1.2vw, 0.94rem);
   color: var(--text-muted);
 }
 

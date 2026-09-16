@@ -7,7 +7,6 @@ import PageHeader from '../components/ui/PageHeader.jsx'
 import CTASection from '../components/ui/CTASection.jsx'
 import TeamCard from '../components/cards/TeamCard.jsx'
 import WhatMeans from '../components/sections/WhatMeans.jsx'
-import OrganizationTree from '../components/sections/OrganizationTree.jsx'
 import FutureDirection from '../components/sections/FutureDirection.jsx'
 import WhyWorkWithUs from '../components/sections/WhyWorkWithUs.jsx'
 import LegalFoundation from '../components/sections/LegalFoundation.jsx'
@@ -184,22 +183,6 @@ function CoreValues() {
   )
 }
 
-function Structure() {
-  return (
-    <section className="section section--off-white">
-      <div className="container">
-        <SectionHeading
-          center
-          eyebrow="Organizational Structure"
-          title={<>BUILT WITH STRUCTURE.<br /><span className="text-gold">DRIVEN BY CREATIVITY.</span></>}
-          subtitle="Executive leadership and governance oversee five dedicated divisions."
-        />
-        <OrganizationTree />
-      </div>
-    </section>
-  )
-}
-
 function Leadership() {
   return (
     <section className="section about-leadership">
@@ -250,7 +233,6 @@ function About() {
       <Vision />
       <Mission />
       <CoreValues />
-      <Structure />
       <Leadership />
       <LegalFoundation />
       <WhyWorkWithUs />

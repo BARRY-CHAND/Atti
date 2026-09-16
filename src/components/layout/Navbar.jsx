@@ -60,7 +60,10 @@ function Navbar() {
         <div className="container nav__inner">
           <Link to="/" className="nav__brand" aria-label="ATTI VERSE home">
             <span className="nav__brand-text">
-              <span className="nav__brand-name">ATTI VERSE</span>
+              <span className="nav__brand-name" aria-label="ATTI VERSE">
+                <span className="nav__brand-line">ATTI</span>
+                <span className="nav__brand-line">VERSE</span>
+              </span>
               <span className="nav__brand-sub">Entertainment &amp; Productions</span>
             </span>
           </Link>

@@ -48,12 +48,10 @@ function Upcoming() {
         subtitle="The next chapter is already taking shape."
       />
 
-      <div style={{ marginTop: 'clamp(2.5rem, 5vw, 4rem)' }}>
-        <CategoryBlock eyebrow="Announcements" title="UPCOMING EVENTS" items={UPCOMING.events} idx={0} />
-        <CategoryBlock eyebrow="On Screen & On Stage" title="UPCOMING PRODUCTIONS" items={UPCOMING.productions} idx={1} />
-        <CategoryBlock eyebrow="Partnerships" title="UPCOMING COLLABORATIONS" items={UPCOMING.collaborations} idx={2} />
-        <CategoryBlock eyebrow="Join Us" title="OPPORTUNITIES" items={UPCOMING.opportunities} idx={3} />
-      </div>
+      <CategoryBlock eyebrow="Announcements" title="UPCOMING EVENTS" items={UPCOMING.events} idx={0} />
+      <CategoryBlock eyebrow="On Screen & On Stage" title="UPCOMING PRODUCTIONS" items={UPCOMING.productions} idx={1} />
+      <CategoryBlock eyebrow="Partnerships" title="UPCOMING COLLABORATIONS" items={UPCOMING.collaborations} idx={2} />
+      <CategoryBlock eyebrow="Join Us" title="OPPORTUNITIES" items={UPCOMING.opportunities} idx={3} />
 
       <CTASection
         copy={
