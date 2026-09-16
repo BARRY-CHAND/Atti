@@ -14,7 +14,7 @@ function Work() {
   const visible = WORK.filter(CAT_ALIASES[filter] || ((w) => w.category.toUpperCase() === filter))
 
   return (
-    <>
+    <div className="portfolio-page">
       <Seo
         title="Our Work | Portfolio — ATTI VERSE"
         description="A portfolio of entertainment, events, production, creative and media work by ATTI VERSE Entertainment & Productions."
@@ -40,18 +40,18 @@ function Work() {
               </p>
             </Reveal>
           ) : (
-            <div className="masonry">
+            <div className="portfolio-grid">
               {visible.map((project, i) => (
                 <Reveal key={project.id} dir="up" delay={(i % 3) * 70}>
-                  <article className="project-card" style={{ width: '100%', marginBottom: '1.4rem' }}>
-                    <div className="project-card__media" style={{ aspectRatio: i % 3 === 1 ? '4 / 5' : '4 / 3' }}>
+                  <article className="portfolio-card">
+                    <div className="portfolio-card__media">
                       <Img src={project.image} alt={`${project.title} — ${project.category}`} />
                     </div>
-                    <div className="project-card__body">
-                      <span className="project-card__cat">{project.category}</span>
-                      <h3 className="project-card__title">{project.title}</h3>
-                      <p className="project-card__desc">{project.description}</p>
-                      <div className="project-card__footer">
+                    <div className="portfolio-card__body">
+                      <div className="portfolio-card__top"><span>{project.category}</span><strong>{project.year}</strong></div>
+                      <h3>{project.title}</h3>
+                      <p>{project.description}</p>
+                      <div className="portfolio-card__footer">
                         <span>{project.year} · View Project</span>
                         <span aria-hidden="true">↗</span>
                       </div>
@@ -71,7 +71,7 @@ function Work() {
           </>
         }
       />
-    </>
+    </div>
   )
 }
 

@@ -26,7 +26,7 @@ function Gallery() {
   const next = () => setLightboxIndex((i) => (i === visible.length - 1 ? 0 : i + 1))
 
   return (
-    <>
+    <div className="gallery-page">
       <Seo
         title="Gallery | Our Moments — ATTI VERSE"
         description="A visual gallery of events, performances, production, behind-the-scenes and creative moments from the ATTI VERSE ecosystem."
@@ -45,7 +45,7 @@ function Gallery() {
             <FilterBar filters={GALLERY_FILTERS} active={filter} onChange={setFilter} />
           </Reveal>
 
-          <div className="masonry">
+          <div className="gallery-grid">
             {visible.map((item) => (
               <GalleryCard key={item.id} item={item} onOpen={open} />
             ))}
@@ -65,7 +65,7 @@ function Gallery() {
         }
         primary={{ label: 'Book A Shoot', to: '/contact' }}
       />
-    </>
+    </div>
   )
 }
 
