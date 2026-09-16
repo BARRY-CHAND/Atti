@@ -3682,3 +3682,18 @@
 .about-home__mission-items span { color:var(--ink); font-family:var(--font-display); font-size:clamp(.85rem,1.3vw,1.05rem); line-height:1.15; }
 .about-home__mission-items b { display:block; color:var(--gold); font-weight:500; }
 @media(max-width:640px) { .about-home__mission-items { grid-template-columns:1fr; gap:.55rem; } .about-home__mission-items span { display:flex; gap:.35rem; } .about-home__mission-items b { display:inline; } }
+
+/* Integrated mission emphasis */
+.about-home__mission-items span { font-size:clamp(1rem,1.6vw,1.25rem); font-weight:600; text-transform:uppercase; }
+.about-home__mission-items b { font-size:1.18em; font-weight:800; letter-spacing:.02em; }
+/* Classic Why ATTI VERSE editorial layout */
+.why-attii--classic { display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(2.5rem,6vw,5rem); align-items:start; }
+.why-attii--classic .why-attii__head { display:block; }
+.why-attii--classic .why-attii__statement { margin-top:2rem; }
+.why-attii--classic .why-attii__list { display:block; border-top:1px solid var(--gold-line); margin-top:0; padding-top:0; }
+.why-attii--classic .why-attii__row { display:grid; grid-template-columns:3rem 1fr auto; min-height:0; flex-direction:initial; padding:1.4rem 0; border:0; border-bottom:1px solid rgba(176,140,64,.16); background:transparent; }
+.why-attii--classic .why-attii__row:hover { padding-left:.9rem; transform:none; background:linear-gradient(90deg,rgba(176,140,64,.06),transparent 70%); }
+.why-attii--classic .why-attii__title { margin-top:0; font-size:clamp(1.35rem,2.2vw,1.9rem); }
+.why-attii--classic .why-attii__arrow { align-self:auto; margin-top:0; opacity:0; transform:translateX(-8px); }
+.why-attii--classic .why-attii__row:hover .why-attii__arrow { opacity:1; transform:translateX(0); }
+@media(max-width:900px) { .why-attii--classic { grid-template-columns:1fr; gap:2.5rem; } .why-attii--classic .why-attii__list { margin-top:0; } }

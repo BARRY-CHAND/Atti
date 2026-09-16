@@ -8,6 +8,7 @@ function WhyAttii() {
   return (
     <section className="section why-attii-section">
       <div className="container">
+        <div className="why-attii why-attii--classic">
         <div className="why-attii__head">
           <div className="why-attii__intro">
             <SectionHeading
@@ -59,6 +60,7 @@ function WhyAttii() {
                 </article>
               </Reveal>
             ))}
+        </div>
         </div>
       </div>
     </section>
