@@ -18,7 +18,7 @@ function ServiceDetail() {
   const gallery = [service.image, ...SERVICES.filter((s) => s.slug !== slug).slice(0, 2).map((s) => s.image)]
 
   return (
-    <>
+    <div className="service-detail">
       <Seo
         title={`${service.title} | ATTI VERSE`}
         description={service.description}
@@ -29,10 +29,11 @@ function ServiceDetail() {
         crumb={service.title}
         title={service.title.toUpperCase()}
         subtitle={service.tagline}
+        image={service.image}
       />
 
       {/* Overview */}
-      <section className="section">
+      <section className="section service-detail__overview">
         <div className="container feature">
           <Reveal dir="right" delay={100}>
             <div className="feature__media">
@@ -65,7 +66,7 @@ function ServiceDetail() {
       </section>
 
       {/* Capabilities */}
-      <section className="section section--off-white">
+      <section className="section section--off-white service-detail__capabilities">
         <div className="container grid-2">
           <div>
             <SectionHeading eyebrow="Capabilities" title={<>WHAT THIS DIVISION <span className="text-gold">HANDLES</span></>} />
@@ -204,7 +205,7 @@ function ServiceDetail() {
           </>
         }
       />
-    </>
+    </div>
   )
 }
 
