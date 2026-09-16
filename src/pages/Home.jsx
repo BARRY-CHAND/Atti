@@ -4,23 +4,16 @@ import Seo from '../components/ui/Seo.jsx'
 import Reveal from '../components/ui/Reveal.jsx'
 import Img from '../components/ui/Img.jsx'
 import Icon from '../components/ui/Icon.jsx'
-import SectionHeading from '../components/ui/SectionHeading.jsx'
 import CTASection from '../components/ui/CTASection.jsx'
-import Testimonials from '../components/ui/Testimonials.jsx'
 import EventCard from '../components/cards/EventCard.jsx'
 import WhyAttii from '../components/sections/WhyAttii.jsx'
 import ServicesIndex from '../components/sections/ServicesIndex.jsx'
-import ProductionShowcase from '../components/sections/ProductionShowcase.jsx'
 import TalentSection from '../components/sections/TalentSection.jsx'
-import OrganizationTree from '../components/sections/OrganizationTree.jsx'
 import FutureDirection from '../components/sections/FutureDirection.jsx'
-import InstitutionalCTA from '../components/sections/InstitutionalCTA.jsx'
 import { IMAGES } from '../config/images.js'
-import { SITE } from '../config/site.js'
 import { FEATURED_EVENTS, EVENT_PLACEHOLDERS } from '../data/events.js'
 import { WORK } from '../data/work.js'
 import { LEADERSHIP } from '../data/team.js'
-import { HOME_MILESTONES } from '../data/achievements.js'
 
 function Hero() {
   const heroSlides = [IMAGES.hero, IMAGES.events.srmPongal2026, IMAGES.events.culturalStage, IMAGES.gallery[0], IMAGES.gallery[1]]
@@ -113,92 +106,38 @@ function Hero() {
   )
 }
 
-function Introduction() {
-  return null
-}
-
-function BrandIntro() {
+function WorksAndEvents() {
+  const featured = WORK.filter((w) => w.featured)
+  const events = [...FEATURED_EVENTS, ...EVENT_PLACEHOLDERS].slice(0, 3)
   return (
-    <section className="section about-home">
+    <section className="section section--dark">
       <div className="container">
-        <div className="about-home__grid">
-          <Reveal dir="right" delay={100}>
-            <div className="about-home__visual">
-            <Img
-              src={IMAGES.aboutHome}
-              alt="The ATTI VERSE creative ecosystem"
-              aspect="4 / 3"
-              className="about-home__image"
-            />
-              <div className="about-home__stamp">CREATIVE ECOSYSTEM</div>
-              <div className="about-home__index">01 <span>/ ABOUT</span></div>
-            </div>
-          </Reveal>
-          <div className="about-home__copy">
+        <div className="section-head-row">
+          <div className="section-head" style={{ marginBottom: 0 }}>
             <Reveal dir="up">
-              <span className="eyebrow">Who We Are</span>
-              <h2 className="section-title about-home__title">
-                A growing universe of <span className="text-gold">talent, creativity</span> and production.
+              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
+                Works &amp; Events
+              </span>
+              <h2 className="section-title section-head__title">
+                MOMENTS WE'VE <span className="text-gold">CREATED.</span>
               </h2>
             </Reveal>
-            <Reveal dir="up" delay={120}>
-              <p className="about-home__lead">
-                {SITE.fullName} brings together entertainment, event management, media production,
-                creative services and talented creators under one growing platform.
-              </p>
-            </Reveal>
-            <Reveal dir="up" delay={220}>
-              <p className="about-home__body">
-                What began as a college-based creative initiative has evolved into a structured
-                organization with leadership, divisions and operational systems — built for serious,
-                scalable growth.
-              </p>
-            </Reveal>
-            <Reveal dir="up" delay={320}>
-              <Link to="/about" className="text-link about-home__link">
-                Discover ATTI VERSE <span>↗</span>
-              </Link>
-            </Reveal>
-            <Reveal dir="up" delay={400}>
-              <div className="about-home__mission">
-                <div className="about-home__mission-head">
-                  <span className="eyebrow">Our Mission</span>
-                  <span>01 — 03</span>
-                </div>
-                <div className="about-home__mission-items">
-                  <span>We create <b>experiences.</b></span>
-                  <span>We build <b>talent.</b></span>
-                  <span>We produce <b>stories.</b></span>
-                </div>
-              </div>
-            </Reveal>
           </div>
+          <Reveal dir="up" delay={120}>
+            <Link to="/work" className="text-link text-link--dark">
+              View All Work →
+            </Link>
+          </Reveal>
         </div>
-      </div>
-    </section>
-  )
-}
 
-function FeaturedWork() {
-  const featured = WORK.filter((w) => w.featured)
-  return (
-    <section className="section">
-      <div className="container">
-        <div className="work-editorial">
+        <div className="work-editorial" style={{ marginTop: 'clamp(3rem,6vw,4.5rem)' }}>
           <div className="work-editorial__head">
             <Reveal dir="up">
-              <span className="eyebrow">Our Work</span>
-              <h2 className="section-title" style={{ marginTop: '1.1rem', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
-                SELECTED <span className="text-gold">WORK.</span>
-              </h2>
-            </Reveal>
-            <Reveal dir="up" delay={100}>
-              <Link to="/work" className="text-link" style={{ marginTop: '1.5rem', display: 'inline-flex' }}>
-                View All Work →
-              </Link>
+              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
+                Selected Work
+              </span>
             </Reveal>
           </div>
-
           <div className="work-editorial__grid">
             {featured.slice(0, 3).map((project, i) => (
               <Reveal key={project.id} dir="up" delay={i * 80}>
@@ -219,22 +158,17 @@ function FeaturedWork() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
-  )
-}
 
-function FeaturedEvents() {
-  const events = [...FEATURED_EVENTS, ...EVENT_PLACEHOLDERS].slice(0, 3)
-  return (
-    <section className="section section--dark">
-      <div className="container">
-        <div className="section-head-row">
+        <div className="section-head-row" style={{ marginTop: 'clamp(3.5rem,7vw,6rem)' }}>
           <div className="section-head" style={{ marginBottom: 0 }}>
-            <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
-              Events
-            </span>
-            <h2 className="section-title section-head__title">MOMENTS WE'VE CREATED</h2>
+            <Reveal dir="up">
+              <span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>
+                Live Events
+              </span>
+              <h3 className="section-title" style={{ fontSize: 'clamp(1.6rem,3vw,2.4rem)' }}>
+                LIVE. UNFORGETTABLE. <span className="text-gold">VERSE.</span>
+              </h3>
+            </Reveal>
           </div>
           <Reveal dir="up" delay={150}>
             <Link to="/events" className="text-link text-link--dark">
@@ -242,7 +176,7 @@ function FeaturedEvents() {
             </Link>
           </Reveal>
         </div>
-        <div className="grid-3" style={{ marginTop: '2.5rem' }}>
+        <div className="grid-3" style={{ marginTop: '2rem' }}>
           {events.map((event, i) => (
             <EventCard key={event.id} event={event} index={i} />
           ))}
@@ -252,61 +186,7 @@ function FeaturedEvents() {
   )
 }
 
-function StructureSection() {
-  return (
-    <section className="section section--light-green">
-      <div className="container">
-        <SectionHeading
-          center
-          eyebrow="Organizational Structure"
-          title={<>BUILT WITH STRUCTURE.<br /><span className="text-gold">DRIVEN BY CREATIVITY.</span></>}
-          subtitle="Five divisions, one direction — a professional foundation underneath every creative output."
-        />
-        <OrganizationTree />
-      </div>
-    </section>
-  )
-}
-
-function Milestones() {
-  return (
-    <section className="section">
-      <div className="container">
-        <div className="milestones-editorial">
-          <div className="milestones-editorial__head">
-            <Reveal dir="up">
-              <span className="eyebrow">Milestones</span>
-              <h2 className="section-title" style={{ marginTop: '1.1rem', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
-                BUILT ON <span className="text-gold">EARNED MILESTONES.</span>
-              </h2>
-            </Reveal>
-            <Reveal dir="up" delay={100}>
-              <p style={{ color: 'var(--text-muted)', marginTop: '1rem', maxWidth: '50ch' }}>
-                Every milestone below is verified. Nothing here is invented.
-              </p>
-            </Reveal>
-          </div>
-
-          <div className="milestones-editorial__list">
-            {HOME_MILESTONES.map((m, i) => (
-              <Reveal key={m.title} dir="up" delay={i * 50}>
-                <div className="milestones-editorial__row">
-                  <span className="milestones-editorial__num">{String(i + 1).padStart(2, '0')}</span>
-                  <div className="milestones-editorial__body">
-                    <h3 className="milestones-editorial__title">{m.title}</h3>
-                    {m.note && <p className="milestones-editorial__note">{m.note}</p>}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function TeamPreview() {
+function PeopleBehind() {
   return (
     <section className="section">
       <div className="container">
@@ -322,7 +202,7 @@ function TeamPreview() {
               </Reveal>
               <Reveal dir="up" delay={100}>
                 <Link to="/team" className="text-link" style={{ alignItems: 'center' }}>
-                  Meet Our Team →
+                  Explore the Teams →
                 </Link>
               </Reveal>
             </div>
@@ -361,20 +241,12 @@ function Home() {
         path="/"
       />
       <Hero />
-      <Introduction />
-      <BrandIntro />
       <WhyAttii />
       <ServicesIndex />
-      <FeaturedWork />
-      <FeaturedEvents />
-      <ProductionShowcase />
+      <WorksAndEvents />
+      <PeopleBehind />
       <TalentSection />
-      <StructureSection />
-      <TeamPreview />
-      <Milestones />
       <FutureDirection />
-      <Testimonials />
-      <InstitutionalCTA />
       <CTASection
         title="LET'S CREATE SOMETHING WORTH REMEMBERING."
         copy={
