@@ -44,29 +44,40 @@ const TIMELINE = [
 
 function WhoWeAre() {
   return (
-    <section className="section">
-      <div className="container grid-2">
-        <div>
+    <section className="section about-profile">
+      <div className="container">
+        <div className="about-profile__top">
           <SectionHeading eyebrow="Who We Are" title={<>A MULTI-DISCIPLINARY <span className="text-gold">CREATIVE ORGANIZATION</span></>} />
-          <Reveal dir="up" delay={100}>
-            <p style={{ color: 'var(--text-muted)' }}>
-              {`ATTI VERSE Entertainment & Productions is a multi-disciplinary creative organization working
-              across entertainment, media production, event management and creative services.`}
-            </p>
-          </Reveal>
-          <Reveal dir="up" delay={200}>
-            <p style={{ color: 'var(--text-muted)', marginTop: '1.1rem' }}>
-              What began as a creative initiative has evolved into a structured organization built
-              around talented performers, creators, organizers and production teams.
-            </p>
-          </Reveal>
-          <Reveal dir="up" delay={300}>
-            <p style={{ color: 'var(--text-muted)', marginTop: '1.1rem' }}>
-              We are growing, but we are serious — and the way we organize, coordinate and deliver
-              reflects that.
-            </p>
+          <Reveal dir="left" delay={120}>
+            <p className="about-profile__lead">We connect creative talent, production discipline and live experience to build work that moves people.</p>
           </Reveal>
         </div>
+        <div className="about-profile__body">
+        <Reveal dir="up" delay={100}>
+          <div className="about-profile__media">
+            <Img src={IMAGES.aboutHome} alt="The people and creative work of ATTI VERSE" aspect="16 / 10" />
+            <span>ATTI VERSE / COMPANY PROFILE</span>
+          </div>
+        </Reveal>
+        <div className="about-profile__copy">
+          <Reveal dir="up" delay={100}><p>
+            {`ATTI VERSE Entertainment & Productions is a multi-disciplinary creative organization working across entertainment, media production, event management and creative services.`}
+          </p></Reveal>
+          <Reveal dir="up" delay={200}><p className="about-profile__muted">
+              What began as a creative initiative has evolved into a structured organization built
+              around talented performers, creators, organizers and production teams.
+          </p></Reveal>
+          <Reveal dir="up" delay={300}><p className="about-profile__muted">
+              We are growing, but we are serious — and the way we organize, coordinate and deliver
+              reflects that.
+          </p></Reveal>
+          <div className="about-profile__metrics">
+            <div><strong>05</strong><span>Creative divisions</span></div>
+            <div><strong>01</strong><span>Connected platform</span></div>
+            <div><strong>∞</strong><span>Room to create</span></div>
+          </div>
+        </div>
+      </div>
         <Reveal dir="right" delay={150}>
           <Img
             src={IMAGES.aboutHome}
@@ -223,7 +234,8 @@ function About() {
         eyebrow="About Us"
         crumb="About"
         title="ABOUT ATTI VERSE"
-        subtitle="A universe built around talent, creativity and opportunity."
+        subtitle="A structured creative organization built for entertainment, production and cultural impact."
+        image={IMAGES.aboutHome}
       />
       <WhoWeAre />
       <OurStory />
