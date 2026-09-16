@@ -74,8 +74,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(60% 90% at 82% 18%, rgba(176, 140, 64, 0.14), transparent 60%),
-    radial-gradient(50% 70% at 8% 90%, rgba(47, 74, 74, 0.14), transparent 60%);
+    radial-gradient(60% 90% at 82% 18%, rgba(212, 175, 55, 0.14), transparent 60%),
+    radial-gradient(50% 70% at 8% 90%, rgba(16, 163, 115, 0.14), transparent 60%);
   pointer-events: none;
 }
 
@@ -91,7 +91,7 @@
 .page-header__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16, 32, 32, 0.55) 0%, rgba(16, 32, 32, 0.86) 80%, var(--emerald-bg) 100%);
+  background: linear-gradient(180deg, rgba(4, 58, 43, 0.55) 0%, rgba(4, 58, 43, 0.86) 80%, var(--emerald-bg) 100%);
 }
 
 .page-header__inner {
@@ -266,11 +266,11 @@
 .gold-shimmer {
   background: linear-gradient(
     100deg,
-    #dfc383 12%,
-    #b08c40 28%,
-    #fff6d8 44%,
-    #b08c40 60%,
-    #dfc383 82%
+    #f0d883 12%,
+    #d4af37 28%,
+    #fae9b8 44%,
+    #d4af37 60%,
+    #f0d883 82%
   );
   background-size: 220% 100%;
   -webkit-background-clip: text;

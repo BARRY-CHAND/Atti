@@ -3,24 +3,24 @@
    ============================================================ */
 
 :root {
-  /* Brand colors — from official ATTI VERSE logo (desaturated teal-black + bronze gold) */
-  --emerald-black: #070d0d;
-  --emerald-950: #0c1818;
-  --emerald-900: #102020;
-  --emerald-800: #152727;
-  --emerald-700: #1c2f2f;
-  --emerald-600: #253b3b;
-  --emerald-500: #2f4a4a;
+  /* Brand colors — rich emerald green scale */
+  --emerald-black: #021610;
+  --emerald-950: #03251c;
+  --emerald-900: #043a2b;
+  --emerald-800: #065139;
+  --emerald-700: #08684b;
+  --emerald-600: #0b8460;
+  --emerald-500: #10a373;
 
-  /* Unified site background — matches logo dark */
-  --emerald-bg: #102020;
-  --emerald-deep: #0c1818;
-  --emerald-black: #070d0d;
+  /* Unified site background — deep emerald green */
+  --emerald-bg: #063a2c;
+  --emerald-deep: #042a20;
+  --emerald-black: #021610;
 
-  --gold: #b08c40;
-  --gold-soft: #dfc383;
-  --gold-faint: rgba(176, 140, 64, 0.22);
-  --gold-line: rgba(176, 140, 64, 0.42);
+  --gold: #d4af37;
+  --gold-soft: #f0d883;
+  --gold-faint: rgba(212, 175, 55, 0.22);
+  --gold-line: rgba(212, 175, 55, 0.42);
 
   --white: #ffffff;
   --off-white: #f4faf7;
@@ -30,14 +30,14 @@
   --section-bg: var(--emerald-bg);
 
   /* Text on dark emerald */
-  --ink: #e8eeea;
-  --text-muted: #b6c5bf;
-  --text-faint: #7e918a;
+  --ink: #eaf4ee;
+  --text-muted: #a9c7b8;
+  --text-faint: #6f9986;
 
   /* Surfaces */
   --panel: rgba(255, 255, 255, 0.05);
   --panel-2: rgba(255, 255, 255, 0.08);
-  --line: rgba(176, 140, 64, 0.2);
+  --line: rgba(212, 175, 55, 0.2);
 
   /* Typography */
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -54,8 +54,8 @@
   --radius-lg: 20px;
 
   /* Effects */
-  --shadow-soft: 0 18px 50px -18px rgba(1, 11, 8, 0.6);
-  --shadow-gold: 0 16px 40px -16px rgba(176, 140, 64, 0.32);
+  --shadow-soft: 0 18px 50px -18px rgba(0, 20, 12, 0.6);
+  --shadow-gold: 0 16px 40px -16px rgba(212, 175, 55, 0.32);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
   --header-h: 84px;
@@ -384,7 +384,7 @@ h6 {
 }
 
 .btn--emerald {
-  background: rgba(176, 140, 64, 0.12);
+  background: rgba(212, 175, 55, 0.12);
   border-color: var(--gold-line);
   color: var(--gold-soft);
 }

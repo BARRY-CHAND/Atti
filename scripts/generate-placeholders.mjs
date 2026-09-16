@@ -21,14 +21,14 @@ function svg(w, h, label) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0c1818"/>
-      <stop offset="55%" stop-color="#102020"/>
-      <stop offset="100%" stop-color="#102020"/>
+      <stop offset="0%" stop-color="#03251c"/>
+      <stop offset="55%" stop-color="#043a2b"/>
+      <stop offset="100%" stop-color="#043a2b"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#E5C76B"/>
+      <stop offset="0%" stop-color="#F0D883"/>
       <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#E5C76B"/>
+      <stop offset="100%" stop-color="#F0D883"/>
     </linearGradient>
   </defs>
   <rect width="${w}" height="${h}" fill="url(#bg)"/>
@@ -36,7 +36,7 @@ function svg(w, h, label) {
   <rect x="${w * 0.073}" y="${h * 0.073}" width="${w * 0.854}" height="${h * 0.854}" fill="none" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="1"/>
   <text x="${w / 2}" y="${h / 2}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="${Math.round(w * 0.085)}" font-weight="700" fill="url(#gold)" letter-spacing="${Math.round(w * 0.014)}">AV</text>
   <text x="${w / 2}" y="${h / 2 + h * 0.115}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="${Math.round(Math.max(16, w * 0.016))}" letter-spacing="${Math.round(Math.max(3, w * 0.006))}" fill="#FFFFFF" font-weight="600">ATTII VERSE</text>
-  <text x="${w / 2}" y="${h / 2 + h * 0.155}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="${Math.round(Math.max(12, w * 0.011))}" letter-spacing="${Math.round(Math.max(2, w * 0.004))}" fill="#E5C76B" fill-opacity="0.85">${label}</text>
+  <text x="${w / 2}" y="${h / 2 + h * 0.155}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="${Math.round(Math.max(12, w * 0.011))}" letter-spacing="${Math.round(Math.max(2, w * 0.004))}" fill="#F0D883" fill-opacity="0.85">${label}</text>
 </svg>`
 }
 
@@ -97,7 +97,7 @@ for (const [relPath, size] of PLAN) {
       `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0c1818"/><stop offset="100%" stop-color="#102020"/>
+      <stop offset="0%" stop-color="#03251c"/><stop offset="100%" stop-color="#043a2b"/>
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#g)"/>
