@@ -3449,3 +3449,45 @@
   .hero.hero--slideshow .hero__meta { order: 5; }
   .hero.hero--slideshow .hero__slides { order: 6; }
 }
+
+/* Desktop hero hierarchy: ATTI VERSE first, supporting message smaller */
+@media (min-width: 641px) {
+  .hero.hero--slideshow .hero__brand-lockup {
+    margin-bottom: 1rem;
+  }
+  .hero.hero--slideshow .hero__brand-lockup p {
+    font-size: clamp(3.8rem, 8vw, 8.5rem);
+    letter-spacing: .1em;
+    text-indent: .1em;
+    line-height: .92;
+  }
+  .hero.hero--slideshow .hero__title-block {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hero.hero--slideshow .hero__title-line--attii {
+    font-size: clamp(1.35rem, 2.5vw, 2.35rem);
+    letter-spacing: .14em;
+    line-height: 1.1;
+  }
+  .hero.hero--slideshow .hero__title-line--verse {
+    font-size: clamp(1.15rem, 2vw, 1.85rem);
+    letter-spacing: .18em;
+    line-height: 1.1;
+  }
+  .hero.hero--slideshow .hero__tagline {
+    max-width: 560px;
+    margin-top: 1.1rem;
+    font-size: clamp(.72rem, 1vw, .9rem);
+    letter-spacing: .12em;
+  }
+  .hero.hero--slideshow .hero__actions {
+    margin-top: 1.5rem;
+  }
+  .hero.hero--slideshow .hero__meta {
+    margin-top: 1.15rem;
+    font-size: .58rem;
+    letter-spacing: .14em;
+  }
+}
